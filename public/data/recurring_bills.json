@@ -1,0 +1,5360 @@
+[
+  {
+    "merchant": "RENT",
+    "category": "Fixed Expenses",
+    "frequency": "Weekly",
+    "cycle_days": 7,
+    "count": 25,
+    "first_date": "2026-01-09",
+    "last_date": "2026-06-25",
+    "avg_amount": -1050.0,
+    "variance": 0.0,
+    "projected_payments": [
+      {
+        "date": "2026-07-02",
+        "amount": -1050.0
+      },
+      {
+        "date": "2026-07-09",
+        "amount": -1050.0
+      },
+      {
+        "date": "2026-07-16",
+        "amount": -1050.0
+      },
+      {
+        "date": "2026-07-23",
+        "amount": -1050.0
+      },
+      {
+        "date": "2026-07-30",
+        "amount": -1050.0
+      },
+      {
+        "date": "2026-08-06",
+        "amount": -1050.0
+      },
+      {
+        "date": "2026-08-13",
+        "amount": -1050.0
+      },
+      {
+        "date": "2026-08-20",
+        "amount": -1050.0
+      },
+      {
+        "date": "2026-08-27",
+        "amount": -1050.0
+      },
+      {
+        "date": "2026-09-03",
+        "amount": -1050.0
+      },
+      {
+        "date": "2026-09-10",
+        "amount": -1050.0
+      },
+      {
+        "date": "2026-09-17",
+        "amount": -1050.0
+      },
+      {
+        "date": "2026-09-24",
+        "amount": -1050.0
+      },
+      {
+        "date": "2026-10-01",
+        "amount": -1050.0
+      },
+      {
+        "date": "2026-10-08",
+        "amount": -1050.0
+      },
+      {
+        "date": "2026-10-15",
+        "amount": -1050.0
+      },
+      {
+        "date": "2026-10-22",
+        "amount": -1050.0
+      },
+      {
+        "date": "2026-10-29",
+        "amount": -1050.0
+      },
+      {
+        "date": "2026-11-05",
+        "amount": -1050.0
+      },
+      {
+        "date": "2026-11-12",
+        "amount": -1050.0
+      },
+      {
+        "date": "2026-11-19",
+        "amount": -1050.0
+      },
+      {
+        "date": "2026-11-26",
+        "amount": -1050.0
+      },
+      {
+        "date": "2026-12-03",
+        "amount": -1050.0
+      },
+      {
+        "date": "2026-12-10",
+        "amount": -1050.0
+      },
+      {
+        "date": "2026-12-17",
+        "amount": -1050.0
+      },
+      {
+        "date": "2026-12-24",
+        "amount": -1050.0
+      },
+      {
+        "date": "2026-12-31",
+        "amount": -1050.0
+      }
+    ],
+    "owner": "Tola"
+  },
+  {
+    "merchant": "MEMBERSHIP MSL CACI W174889",
+    "category": "Health & Beauty",
+    "frequency": "Monthly",
+    "cycle_days": 30,
+    "count": 6,
+    "first_date": "2026-01-05",
+    "last_date": "2026-06-10",
+    "avg_amount": -256.04,
+    "variance": 0.0,
+    "projected_payments": [
+      {
+        "date": "2026-07-10",
+        "amount": -256.04
+      },
+      {
+        "date": "2026-08-09",
+        "amount": -256.04
+      },
+      {
+        "date": "2026-09-08",
+        "amount": -256.04
+      },
+      {
+        "date": "2026-10-08",
+        "amount": -256.04
+      },
+      {
+        "date": "2026-11-07",
+        "amount": -256.04
+      },
+      {
+        "date": "2026-12-07",
+        "amount": -256.04
+      }
+    ],
+    "owner": "Tola"
+  },
+  {
+    "merchant": "POWERSHOP",
+    "category": "Utilities",
+    "frequency": "Monthly",
+    "cycle_days": 30,
+    "count": 7,
+    "first_date": "2026-01-07",
+    "last_date": "2026-06-25",
+    "avg_amount": -225.88,
+    "variance": 0,
+    "projected_payments": [
+      {
+        "date": "2026-07-25",
+        "amount": -225.88
+      },
+      {
+        "date": "2026-08-24",
+        "amount": -225.88
+      },
+      {
+        "date": "2026-09-23",
+        "amount": -225.88
+      },
+      {
+        "date": "2026-10-23",
+        "amount": -225.88
+      },
+      {
+        "date": "2026-11-22",
+        "amount": -225.88
+      },
+      {
+        "date": "2026-12-22",
+        "amount": -225.88
+      }
+    ],
+    "owner": "Tola"
+  },
+  {
+    "merchant": "PARTNERS LIFE",
+    "category": "Insurance and Loans",
+    "frequency": "Fortnightly",
+    "cycle_days": 14,
+    "count": 12,
+    "first_date": "2026-01-12",
+    "last_date": "2026-06-15",
+    "avg_amount": -195.03,
+    "variance": 0.45,
+    "projected_payments": [
+      {
+        "date": "2026-06-29",
+        "amount": -195.03
+      },
+      {
+        "date": "2026-07-13",
+        "amount": -195.03
+      },
+      {
+        "date": "2026-07-27",
+        "amount": -195.03
+      },
+      {
+        "date": "2026-08-10",
+        "amount": -195.03
+      },
+      {
+        "date": "2026-08-24",
+        "amount": -195.03
+      },
+      {
+        "date": "2026-09-07",
+        "amount": -195.03
+      },
+      {
+        "date": "2026-09-21",
+        "amount": -195.03
+      },
+      {
+        "date": "2026-10-05",
+        "amount": -195.03
+      },
+      {
+        "date": "2026-10-19",
+        "amount": -195.03
+      },
+      {
+        "date": "2026-11-02",
+        "amount": -195.03
+      },
+      {
+        "date": "2026-11-16",
+        "amount": -195.03
+      },
+      {
+        "date": "2026-11-30",
+        "amount": -195.03
+      },
+      {
+        "date": "2026-12-14",
+        "amount": -195.03
+      },
+      {
+        "date": "2026-12-28",
+        "amount": -195.03
+      }
+    ],
+    "owner": "Tola"
+  },
+  {
+    "merchant": "SPARK NZ TRADING-TOMI",
+    "category": "Internet & Mobile",
+    "frequency": "Monthly",
+    "cycle_days": 30,
+    "count": 6,
+    "first_date": "2026-01-05",
+    "last_date": "2026-06-03",
+    "avg_amount": -185.99,
+    "variance": 0.01,
+    "projected_payments": [
+      {
+        "date": "2026-07-03",
+        "amount": -185.99
+      },
+      {
+        "date": "2026-08-02",
+        "amount": -185.99
+      },
+      {
+        "date": "2026-09-01",
+        "amount": -185.99
+      },
+      {
+        "date": "2026-10-01",
+        "amount": -185.99
+      },
+      {
+        "date": "2026-10-31",
+        "amount": -185.99
+      },
+      {
+        "date": "2026-11-30",
+        "amount": -185.99
+      },
+      {
+        "date": "2026-12-30",
+        "amount": -185.99
+      }
+    ],
+    "owner": "Tomi"
+  },
+  {
+    "merchant": "HIGH PERFORMANCE",
+    "category": "Gym Membership",
+    "frequency": "Fortnightly",
+    "cycle_days": 14,
+    "count": 15,
+    "first_date": "2026-01-07",
+    "last_date": "2026-06-24",
+    "avg_amount": -131.15,
+    "variance": 0,
+    "projected_payments": [
+      {
+        "date": "2026-07-08",
+        "amount": -131.15
+      },
+      {
+        "date": "2026-07-22",
+        "amount": -131.15
+      },
+      {
+        "date": "2026-08-05",
+        "amount": -131.15
+      },
+      {
+        "date": "2026-08-19",
+        "amount": -131.15
+      },
+      {
+        "date": "2026-09-02",
+        "amount": -131.15
+      },
+      {
+        "date": "2026-09-16",
+        "amount": -131.15
+      },
+      {
+        "date": "2026-09-30",
+        "amount": -131.15
+      },
+      {
+        "date": "2026-10-14",
+        "amount": -131.15
+      },
+      {
+        "date": "2026-10-28",
+        "amount": -131.15
+      },
+      {
+        "date": "2026-11-11",
+        "amount": -131.15
+      },
+      {
+        "date": "2026-11-25",
+        "amount": -131.15
+      },
+      {
+        "date": "2026-12-09",
+        "amount": -131.15
+      },
+      {
+        "date": "2026-12-23",
+        "amount": -131.15
+      }
+    ],
+    "owner": "Tomi"
+  },
+  {
+    "merchant": "AA INSURANCE-TOLA",
+    "category": "Insurance and Loans",
+    "frequency": "Monthly",
+    "cycle_days": 30,
+    "count": 7,
+    "first_date": "2026-01-31",
+    "last_date": "2026-06-02",
+    "avg_amount": -112.35,
+    "variance": 0.0,
+    "projected_payments": [
+      {
+        "date": "2026-07-02",
+        "amount": -112.35
+      },
+      {
+        "date": "2026-08-01",
+        "amount": -112.35
+      },
+      {
+        "date": "2026-08-31",
+        "amount": -112.35
+      },
+      {
+        "date": "2026-09-30",
+        "amount": -112.35
+      },
+      {
+        "date": "2026-10-30",
+        "amount": -112.35
+      },
+      {
+        "date": "2026-11-29",
+        "amount": -112.35
+      },
+      {
+        "date": "2026-12-29",
+        "amount": -112.35
+      }
+    ],
+    "owner": "Tola"
+  },
+  {
+    "merchant": "SPARK NZ TRADING-TOLA",
+    "category": "Internet & Mobile",
+    "frequency": "Monthly",
+    "cycle_days": 30,
+    "count": 6,
+    "first_date": "2026-01-20",
+    "last_date": "2026-06-19",
+    "avg_amount": -102.13,
+    "variance": 0.29,
+    "projected_payments": [
+      {
+        "date": "2026-07-19",
+        "amount": -102.13
+      },
+      {
+        "date": "2026-08-18",
+        "amount": -102.13
+      },
+      {
+        "date": "2026-09-17",
+        "amount": -102.13
+      },
+      {
+        "date": "2026-10-17",
+        "amount": -102.13
+      },
+      {
+        "date": "2026-11-16",
+        "amount": -102.13
+      },
+      {
+        "date": "2026-12-16",
+        "amount": -102.13
+      }
+    ],
+    "owner": "Tola"
+  },
+  {
+    "merchant": "AA INSURANCE-TOMI",
+    "category": "Insurance and Loans",
+    "frequency": "Monthly",
+    "cycle_days": 30,
+    "count": 6,
+    "first_date": "2026-01-28",
+    "last_date": "2026-05-28",
+    "avg_amount": -83.66,
+    "variance": 0.0,
+    "projected_payments": [
+      {
+        "date": "2026-06-27",
+        "amount": -83.66
+      },
+      {
+        "date": "2026-07-27",
+        "amount": -83.66
+      },
+      {
+        "date": "2026-08-26",
+        "amount": -83.66
+      },
+      {
+        "date": "2026-09-25",
+        "amount": -83.66
+      },
+      {
+        "date": "2026-10-25",
+        "amount": -83.66
+      },
+      {
+        "date": "2026-11-24",
+        "amount": -83.66
+      },
+      {
+        "date": "2026-12-24",
+        "amount": -83.66
+      }
+    ],
+    "owner": "Tomi"
+  },
+  {
+    "merchant": "SWIM LESSONS",
+    "category": "Children & Education",
+    "frequency": "Fortnightly",
+    "cycle_days": 14,
+    "count": 9,
+    "first_date": "2026-01-18",
+    "last_date": "2026-05-03",
+    "avg_amount": -81.0,
+    "variance": 0.0,
+    "projected_payments": [
+      {
+        "date": "2026-05-17",
+        "amount": -81.0
+      },
+      {
+        "date": "2026-05-31",
+        "amount": -81.0
+      },
+      {
+        "date": "2026-06-14",
+        "amount": -81.0
+      },
+      {
+        "date": "2026-06-28",
+        "amount": -81.0
+      },
+      {
+        "date": "2026-07-12",
+        "amount": -81.0
+      },
+      {
+        "date": "2026-07-26",
+        "amount": -81.0
+      },
+      {
+        "date": "2026-08-09",
+        "amount": -81.0
+      },
+      {
+        "date": "2026-08-23",
+        "amount": -81.0
+      },
+      {
+        "date": "2026-09-06",
+        "amount": -81.0
+      },
+      {
+        "date": "2026-09-20",
+        "amount": -81.0
+      },
+      {
+        "date": "2026-10-04",
+        "amount": -81.0
+      },
+      {
+        "date": "2026-10-18",
+        "amount": -81.0
+      },
+      {
+        "date": "2026-11-01",
+        "amount": -81.0
+      },
+      {
+        "date": "2026-11-15",
+        "amount": -81.0
+      },
+      {
+        "date": "2026-11-29",
+        "amount": -81.0
+      },
+      {
+        "date": "2026-12-13",
+        "amount": -81.0
+      },
+      {
+        "date": "2026-12-27",
+        "amount": -81.0
+      }
+    ],
+    "owner": "Tola"
+  },
+  {
+    "merchant": "Baycorp TFR TO Baycorp-860961",
+    "category": "Insurance and Loans",
+    "frequency": "Weekly",
+    "cycle_days": 7,
+    "count": 27,
+    "first_date": "2026-01-05",
+    "last_date": "2026-06-26",
+    "avg_amount": -50.0,
+    "variance": 0.0,
+    "projected_payments": [
+      {
+        "date": "2026-07-03",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-07-10",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-07-17",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-07-24",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-07-31",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-08-07",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-08-14",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-08-21",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-08-28",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-09-04",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-09-11",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-09-18",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-09-25",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-10-02",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-10-09",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-10-16",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-10-23",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-10-30",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-11-06",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-11-13",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-11-20",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-11-27",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-12-04",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-12-11",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-12-18",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-12-25",
+        "amount": -50.0
+      }
+    ],
+    "owner": "Tola"
+  },
+  {
+    "merchant": "Baycorp TFR TO Baycorp-881244",
+    "category": "Insurance and Loans",
+    "frequency": "Weekly",
+    "cycle_days": 7,
+    "count": 26,
+    "first_date": "2026-01-05",
+    "last_date": "2026-06-26",
+    "avg_amount": -50.0,
+    "variance": 0.0,
+    "projected_payments": [
+      {
+        "date": "2026-07-03",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-07-10",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-07-17",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-07-24",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-07-31",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-08-07",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-08-14",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-08-21",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-08-28",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-09-04",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-09-11",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-09-18",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-09-25",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-10-02",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-10-09",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-10-16",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-10-23",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-10-30",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-11-06",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-11-13",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-11-20",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-11-27",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-12-04",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-12-11",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-12-18",
+        "amount": -50.0
+      },
+      {
+        "date": "2026-12-25",
+        "amount": -50.0
+      }
+    ],
+    "owner": "Tola"
+  },
+  {
+    "merchant": "APPLE.COM/BILL-CLAUDEANTROPIC",
+    "category": "Subscriptions",
+    "frequency": "Monthly",
+    "cycle_days": 30,
+    "count": 9,
+    "first_date": "2026-02-22",
+    "last_date": "2026-06-22",
+    "avg_amount": -40.0,
+    "variance": 0.0,
+    "projected_payments": [
+      {
+        "date": "2026-07-22",
+        "amount": -40.0
+      },
+      {
+        "date": "2026-08-21",
+        "amount": -40.0
+      },
+      {
+        "date": "2026-09-20",
+        "amount": -40.0
+      },
+      {
+        "date": "2026-10-20",
+        "amount": -40.0
+      },
+      {
+        "date": "2026-11-19",
+        "amount": -40.0
+      },
+      {
+        "date": "2026-12-19",
+        "amount": -40.0
+      }
+    ],
+    "owner": "Tola"
+  },
+  {
+    "merchant": "OPENAI CHATGPT",
+    "category": "Subscriptions",
+    "frequency": "Monthly",
+    "cycle_days": 30,
+    "count": 6,
+    "first_date": "2026-01-04",
+    "last_date": "2026-06-04",
+    "avg_amount": -35.0,
+    "variance": 0.57,
+    "projected_payments": [
+      {
+        "date": "2026-07-04",
+        "amount": -35.0
+      },
+      {
+        "date": "2026-08-03",
+        "amount": -35.0
+      },
+      {
+        "date": "2026-09-02",
+        "amount": -35.0
+      },
+      {
+        "date": "2026-10-02",
+        "amount": -35.0
+      },
+      {
+        "date": "2026-11-01",
+        "amount": -35.0
+      },
+      {
+        "date": "2026-12-01",
+        "amount": -35.0
+      },
+      {
+        "date": "2026-12-31",
+        "amount": -35.0
+      }
+    ],
+    "owner": "Tola"
+  },
+  {
+    "merchant": "SPOTIFY",
+    "category": "Subscriptions",
+    "frequency": "Monthly",
+    "cycle_days": 30,
+    "count": 10,
+    "first_date": "2026-01-19",
+    "last_date": "2026-06-19",
+    "avg_amount": -29.99,
+    "variance": 0.0,
+    "projected_payments": [
+      {
+        "date": "2026-07-19",
+        "amount": -29.99
+      },
+      {
+        "date": "2026-08-18",
+        "amount": -29.99
+      },
+      {
+        "date": "2026-09-17",
+        "amount": -29.99
+      },
+      {
+        "date": "2026-10-17",
+        "amount": -29.99
+      },
+      {
+        "date": "2026-11-16",
+        "amount": -29.99
+      },
+      {
+        "date": "2026-12-16",
+        "amount": -29.99
+      }
+    ],
+    "owner": "Tola"
+  },
+  {
+    "merchant": "HIGH PERFORMANCE-TOLA",
+    "category": "Gym Membership",
+    "frequency": "Weekly",
+    "cycle_days": 7,
+    "count": 6,
+    "first_date": "2026-05-19",
+    "last_date": "2026-06-24",
+    "avg_amount": -26.15,
+    "variance": 0.0,
+    "projected_payments": [
+      {
+        "date": "2026-07-01",
+        "amount": -26.15
+      },
+      {
+        "date": "2026-07-08",
+        "amount": -26.15
+      },
+      {
+        "date": "2026-07-15",
+        "amount": -26.15
+      },
+      {
+        "date": "2026-07-22",
+        "amount": -26.15
+      },
+      {
+        "date": "2026-07-29",
+        "amount": -26.15
+      },
+      {
+        "date": "2026-08-05",
+        "amount": -26.15
+      },
+      {
+        "date": "2026-08-12",
+        "amount": -26.15
+      },
+      {
+        "date": "2026-08-19",
+        "amount": -26.15
+      },
+      {
+        "date": "2026-08-26",
+        "amount": -26.15
+      },
+      {
+        "date": "2026-09-02",
+        "amount": -26.15
+      },
+      {
+        "date": "2026-09-09",
+        "amount": -26.15
+      },
+      {
+        "date": "2026-09-16",
+        "amount": -26.15
+      },
+      {
+        "date": "2026-09-23",
+        "amount": -26.15
+      },
+      {
+        "date": "2026-09-30",
+        "amount": -26.15
+      },
+      {
+        "date": "2026-10-07",
+        "amount": -26.15
+      },
+      {
+        "date": "2026-10-14",
+        "amount": -26.15
+      },
+      {
+        "date": "2026-10-21",
+        "amount": -26.15
+      },
+      {
+        "date": "2026-10-28",
+        "amount": -26.15
+      },
+      {
+        "date": "2026-11-04",
+        "amount": -26.15
+      },
+      {
+        "date": "2026-11-11",
+        "amount": -26.15
+      },
+      {
+        "date": "2026-11-18",
+        "amount": -26.15
+      },
+      {
+        "date": "2026-11-25",
+        "amount": -26.15
+      },
+      {
+        "date": "2026-12-02",
+        "amount": -26.15
+      },
+      {
+        "date": "2026-12-09",
+        "amount": -26.15
+      },
+      {
+        "date": "2026-12-16",
+        "amount": -26.15
+      },
+      {
+        "date": "2026-12-23",
+        "amount": -26.15
+      },
+      {
+        "date": "2026-12-30",
+        "amount": -26.15
+      }
+    ],
+    "owner": "Tola"
+  },
+  {
+    "merchant": "MICROSOFT*MICROSOFT 365",
+    "category": "Subscriptions",
+    "frequency": "Monthly",
+    "cycle_days": 30,
+    "count": 4,
+    "first_date": "2026-04-04",
+    "last_date": "2026-06-04",
+    "avg_amount": -23.0,
+    "variance": 0.0,
+    "projected_payments": [
+      {
+        "date": "2026-07-04",
+        "amount": -23.0
+      },
+      {
+        "date": "2026-08-03",
+        "amount": -23.0
+      },
+      {
+        "date": "2026-09-02",
+        "amount": -23.0
+      },
+      {
+        "date": "2026-10-02",
+        "amount": -23.0
+      },
+      {
+        "date": "2026-11-01",
+        "amount": -23.0
+      },
+      {
+        "date": "2026-12-01",
+        "amount": -23.0
+      },
+      {
+        "date": "2026-12-31",
+        "amount": -23.0
+      }
+    ],
+    "owner": "Tola"
+  },
+  {
+    "merchant": "GOOGLE YOUTUBEPREMIUM",
+    "category": "Subscriptions",
+    "frequency": "Monthly",
+    "cycle_days": 30,
+    "count": 10,
+    "first_date": "2026-01-23",
+    "last_date": "2026-06-24",
+    "avg_amount": -22.99,
+    "variance": 0.0,
+    "projected_payments": [
+      {
+        "date": "2026-07-24",
+        "amount": -22.99
+      },
+      {
+        "date": "2026-08-23",
+        "amount": -22.99
+      },
+      {
+        "date": "2026-09-22",
+        "amount": -22.99
+      },
+      {
+        "date": "2026-10-22",
+        "amount": -22.99
+      },
+      {
+        "date": "2026-11-21",
+        "amount": -22.99
+      },
+      {
+        "date": "2026-12-21",
+        "amount": -22.99
+      }
+    ],
+    "owner": "Tola"
+  },
+  {
+    "merchant": "RHODES PHYSIOTHERAPY",
+    "category": "Health & Medical",
+    "frequency": "Weekly",
+    "cycle_days": 7,
+    "count": 25,
+    "first_date": "2026-02-20",
+    "last_date": "2026-06-19",
+    "avg_amount": -20.4,
+    "variance": 0.0,
+    "projected_payments": [
+      {
+        "date": "2026-06-26",
+        "amount": -20.4
+      },
+      {
+        "date": "2026-07-03",
+        "amount": -20.4
+      },
+      {
+        "date": "2026-07-10",
+        "amount": -20.4
+      },
+      {
+        "date": "2026-07-17",
+        "amount": -20.4
+      },
+      {
+        "date": "2026-07-24",
+        "amount": -20.4
+      },
+      {
+        "date": "2026-07-31",
+        "amount": -20.4
+      },
+      {
+        "date": "2026-08-07",
+        "amount": -20.4
+      },
+      {
+        "date": "2026-08-14",
+        "amount": -20.4
+      },
+      {
+        "date": "2026-08-21",
+        "amount": -20.4
+      },
+      {
+        "date": "2026-08-28",
+        "amount": -20.4
+      },
+      {
+        "date": "2026-09-04",
+        "amount": -20.4
+      },
+      {
+        "date": "2026-09-11",
+        "amount": -20.4
+      },
+      {
+        "date": "2026-09-18",
+        "amount": -20.4
+      },
+      {
+        "date": "2026-09-25",
+        "amount": -20.4
+      },
+      {
+        "date": "2026-10-02",
+        "amount": -20.4
+      },
+      {
+        "date": "2026-10-09",
+        "amount": -20.4
+      },
+      {
+        "date": "2026-10-16",
+        "amount": -20.4
+      },
+      {
+        "date": "2026-10-23",
+        "amount": -20.4
+      },
+      {
+        "date": "2026-10-30",
+        "amount": -20.4
+      },
+      {
+        "date": "2026-11-06",
+        "amount": -20.4
+      },
+      {
+        "date": "2026-11-13",
+        "amount": -20.4
+      },
+      {
+        "date": "2026-11-20",
+        "amount": -20.4
+      },
+      {
+        "date": "2026-11-27",
+        "amount": -20.4
+      },
+      {
+        "date": "2026-12-04",
+        "amount": -20.4
+      },
+      {
+        "date": "2026-12-11",
+        "amount": -20.4
+      },
+      {
+        "date": "2026-12-18",
+        "amount": -20.4
+      },
+      {
+        "date": "2026-12-25",
+        "amount": -20.4
+      }
+    ],
+    "owner": "Tola"
+  },
+  {
+    "merchant": "APPLE.COM/BILL-READINGEGGS",
+    "category": "Subscriptions",
+    "frequency": "Monthly",
+    "cycle_days": 30,
+    "count": 10,
+    "first_date": "2026-01-15",
+    "last_date": "2026-06-15",
+    "avg_amount": -19.99,
+    "variance": 0.0,
+    "projected_payments": [
+      {
+        "date": "2026-07-15",
+        "amount": -19.99
+      },
+      {
+        "date": "2026-08-14",
+        "amount": -19.99
+      },
+      {
+        "date": "2026-09-13",
+        "amount": -19.99
+      },
+      {
+        "date": "2026-10-13",
+        "amount": -19.99
+      },
+      {
+        "date": "2026-11-12",
+        "amount": -19.99
+      },
+      {
+        "date": "2026-12-12",
+        "amount": -19.99
+      }
+    ],
+    "owner": "Tola"
+  },
+  {
+    "merchant": "APPLE.COM/BILL-ICLOUDSUBSCRIPTION",
+    "category": "Subscriptions",
+    "frequency": "Monthly",
+    "cycle_days": 30,
+    "count": 9,
+    "first_date": "2026-01-31",
+    "last_date": "2026-05-30",
+    "avg_amount": -16.99,
+    "variance": 0.0,
+    "projected_payments": [
+      {
+        "date": "2026-06-29",
+        "amount": -16.99
+      },
+      {
+        "date": "2026-07-29",
+        "amount": -16.99
+      },
+      {
+        "date": "2026-08-28",
+        "amount": -16.99
+      },
+      {
+        "date": "2026-09-27",
+        "amount": -16.99
+      },
+      {
+        "date": "2026-10-27",
+        "amount": -16.99
+      },
+      {
+        "date": "2026-11-26",
+        "amount": -16.99
+      },
+      {
+        "date": "2026-12-26",
+        "amount": -16.99
+      }
+    ],
+    "owner": "Tola"
+  },
+  {
+    "merchant": "SECURE PARKING",
+    "category": "Transportation",
+    "frequency": "Daily",
+    "cycle_days": 1,
+    "count": 42,
+    "first_date": "2026-02-11",
+    "last_date": "2026-06-24",
+    "avg_amount": -16.0,
+    "variance": 0.0,
+    "projected_payments": [
+      {
+        "date": "2026-06-25",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-06-26",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-06-27",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-06-28",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-06-29",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-06-30",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-07-01",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-07-02",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-07-03",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-07-04",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-07-05",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-07-06",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-07-07",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-07-08",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-07-09",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-07-10",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-07-11",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-07-12",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-07-13",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-07-14",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-07-15",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-07-16",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-07-17",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-07-18",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-07-19",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-07-20",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-07-21",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-07-22",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-07-23",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-07-24",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-07-25",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-07-26",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-07-27",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-07-28",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-07-29",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-07-30",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-07-31",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-08-01",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-08-02",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-08-03",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-08-04",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-08-05",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-08-06",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-08-07",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-08-08",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-08-09",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-08-10",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-08-11",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-08-12",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-08-13",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-08-14",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-08-15",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-08-16",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-08-17",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-08-18",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-08-19",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-08-20",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-08-21",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-08-22",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-08-23",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-08-24",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-08-25",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-08-26",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-08-27",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-08-28",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-08-29",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-08-30",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-08-31",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-09-01",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-09-02",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-09-03",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-09-04",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-09-05",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-09-06",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-09-07",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-09-08",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-09-09",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-09-10",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-09-11",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-09-12",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-09-13",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-09-14",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-09-15",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-09-16",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-09-17",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-09-18",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-09-19",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-09-20",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-09-21",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-09-22",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-09-23",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-09-24",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-09-25",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-09-26",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-09-27",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-09-28",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-09-29",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-09-30",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-10-01",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-10-02",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-10-03",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-10-04",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-10-05",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-10-06",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-10-07",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-10-08",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-10-09",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-10-10",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-10-11",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-10-12",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-10-13",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-10-14",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-10-15",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-10-16",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-10-17",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-10-18",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-10-19",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-10-20",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-10-21",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-10-22",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-10-23",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-10-24",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-10-25",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-10-26",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-10-27",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-10-28",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-10-29",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-10-30",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-10-31",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-11-01",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-11-02",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-11-03",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-11-04",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-11-05",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-11-06",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-11-07",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-11-08",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-11-09",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-11-10",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-11-11",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-11-12",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-11-13",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-11-14",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-11-15",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-11-16",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-11-17",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-11-18",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-11-19",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-11-20",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-11-21",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-11-22",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-11-23",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-11-24",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-11-25",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-11-26",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-11-27",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-11-28",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-11-29",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-11-30",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-12-01",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-12-02",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-12-03",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-12-04",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-12-05",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-12-06",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-12-07",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-12-08",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-12-09",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-12-10",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-12-11",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-12-12",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-12-13",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-12-14",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-12-15",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-12-16",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-12-17",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-12-18",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-12-19",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-12-20",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-12-21",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-12-22",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-12-23",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-12-24",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-12-25",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-12-26",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-12-27",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-12-28",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-12-29",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-12-30",
+        "amount": -16.0
+      },
+      {
+        "date": "2026-12-31",
+        "amount": -16.0
+      }
+    ],
+    "owner": "Tola"
+  },
+  {
+    "merchant": "AUCKLAND TRANSPORT",
+    "category": "Transportation",
+    "frequency": "Daily",
+    "cycle_days": 1,
+    "count": 69,
+    "first_date": "2026-01-07",
+    "last_date": "2026-06-10",
+    "avg_amount": -13.0,
+    "variance": 0.77,
+    "projected_payments": [
+      {
+        "date": "2026-06-11",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-06-12",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-06-13",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-06-14",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-06-15",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-06-16",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-06-17",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-06-18",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-06-19",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-06-20",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-06-21",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-06-22",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-06-23",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-06-24",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-06-25",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-06-26",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-06-27",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-06-28",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-06-29",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-06-30",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-07-01",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-07-02",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-07-03",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-07-04",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-07-05",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-07-06",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-07-07",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-07-08",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-07-09",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-07-10",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-07-11",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-07-12",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-07-13",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-07-14",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-07-15",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-07-16",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-07-17",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-07-18",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-07-19",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-07-20",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-07-21",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-07-22",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-07-23",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-07-24",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-07-25",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-07-26",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-07-27",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-07-28",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-07-29",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-07-30",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-07-31",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-08-01",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-08-02",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-08-03",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-08-04",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-08-05",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-08-06",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-08-07",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-08-08",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-08-09",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-08-10",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-08-11",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-08-12",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-08-13",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-08-14",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-08-15",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-08-16",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-08-17",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-08-18",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-08-19",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-08-20",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-08-21",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-08-22",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-08-23",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-08-24",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-08-25",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-08-26",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-08-27",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-08-28",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-08-29",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-08-30",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-08-31",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-09-01",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-09-02",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-09-03",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-09-04",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-09-05",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-09-06",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-09-07",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-09-08",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-09-09",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-09-10",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-09-11",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-09-12",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-09-13",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-09-14",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-09-15",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-09-16",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-09-17",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-09-18",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-09-19",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-09-20",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-09-21",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-09-22",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-09-23",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-09-24",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-09-25",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-09-26",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-09-27",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-09-28",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-09-29",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-09-30",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-10-01",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-10-02",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-10-03",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-10-04",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-10-05",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-10-06",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-10-07",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-10-08",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-10-09",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-10-10",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-10-11",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-10-12",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-10-13",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-10-14",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-10-15",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-10-16",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-10-17",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-10-18",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-10-19",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-10-20",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-10-21",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-10-22",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-10-23",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-10-24",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-10-25",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-10-26",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-10-27",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-10-28",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-10-29",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-10-30",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-10-31",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-11-01",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-11-02",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-11-03",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-11-04",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-11-05",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-11-06",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-11-07",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-11-08",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-11-09",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-11-10",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-11-11",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-11-12",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-11-13",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-11-14",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-11-15",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-11-16",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-11-17",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-11-18",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-11-19",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-11-20",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-11-21",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-11-22",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-11-23",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-11-24",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-11-25",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-11-26",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-11-27",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-11-28",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-11-29",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-11-30",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-12-01",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-12-02",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-12-03",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-12-04",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-12-05",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-12-06",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-12-07",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-12-08",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-12-09",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-12-10",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-12-11",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-12-12",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-12-13",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-12-14",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-12-15",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-12-16",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-12-17",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-12-18",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-12-19",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-12-20",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-12-21",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-12-22",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-12-23",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-12-24",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-12-25",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-12-26",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-12-27",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-12-28",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-12-29",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-12-30",
+        "amount": -13.0
+      },
+      {
+        "date": "2026-12-31",
+        "amount": -13.0
+      }
+    ],
+    "owner": "Tomi"
+  },
+  {
+    "merchant": "CRUNCHYROLL.COM",
+    "category": "Subscriptions",
+    "frequency": "Monthly",
+    "cycle_days": 30,
+    "count": 3,
+    "first_date": "2026-01-24",
+    "last_date": "2026-03-24",
+    "avg_amount": -12.49,
+    "variance": 0.0,
+    "projected_payments": [
+      {
+        "date": "2026-04-23",
+        "amount": -12.49
+      },
+      {
+        "date": "2026-05-23",
+        "amount": -12.49
+      },
+      {
+        "date": "2026-06-22",
+        "amount": -12.49
+      },
+      {
+        "date": "2026-07-22",
+        "amount": -12.49
+      },
+      {
+        "date": "2026-08-21",
+        "amount": -12.49
+      },
+      {
+        "date": "2026-09-20",
+        "amount": -12.49
+      },
+      {
+        "date": "2026-10-20",
+        "amount": -12.49
+      },
+      {
+        "date": "2026-11-19",
+        "amount": -12.49
+      },
+      {
+        "date": "2026-12-19",
+        "amount": -12.49
+      }
+    ],
+    "owner": "Tomi"
+  },
+  {
+    "merchant": "PARKMATE",
+    "category": "Transportation",
+    "frequency": "Daily",
+    "cycle_days": 1,
+    "count": 40,
+    "first_date": "2026-01-12",
+    "last_date": "2026-06-02",
+    "avg_amount": -9.5,
+    "variance": 0.48,
+    "projected_payments": [
+      {
+        "date": "2026-06-03",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-06-04",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-06-05",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-06-06",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-06-07",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-06-08",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-06-09",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-06-10",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-06-11",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-06-12",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-06-13",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-06-14",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-06-15",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-06-16",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-06-17",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-06-18",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-06-19",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-06-20",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-06-21",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-06-22",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-06-23",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-06-24",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-06-25",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-06-26",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-06-27",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-06-28",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-06-29",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-06-30",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-07-01",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-07-02",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-07-03",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-07-04",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-07-05",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-07-06",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-07-07",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-07-08",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-07-09",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-07-10",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-07-11",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-07-12",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-07-13",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-07-14",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-07-15",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-07-16",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-07-17",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-07-18",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-07-19",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-07-20",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-07-21",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-07-22",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-07-23",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-07-24",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-07-25",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-07-26",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-07-27",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-07-28",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-07-29",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-07-30",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-07-31",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-08-01",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-08-02",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-08-03",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-08-04",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-08-05",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-08-06",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-08-07",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-08-08",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-08-09",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-08-10",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-08-11",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-08-12",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-08-13",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-08-14",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-08-15",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-08-16",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-08-17",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-08-18",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-08-19",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-08-20",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-08-21",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-08-22",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-08-23",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-08-24",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-08-25",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-08-26",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-08-27",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-08-28",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-08-29",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-08-30",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-08-31",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-09-01",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-09-02",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-09-03",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-09-04",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-09-05",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-09-06",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-09-07",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-09-08",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-09-09",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-09-10",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-09-11",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-09-12",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-09-13",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-09-14",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-09-15",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-09-16",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-09-17",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-09-18",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-09-19",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-09-20",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-09-21",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-09-22",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-09-23",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-09-24",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-09-25",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-09-26",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-09-27",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-09-28",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-09-29",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-09-30",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-10-01",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-10-02",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-10-03",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-10-04",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-10-05",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-10-06",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-10-07",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-10-08",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-10-09",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-10-10",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-10-11",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-10-12",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-10-13",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-10-14",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-10-15",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-10-16",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-10-17",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-10-18",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-10-19",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-10-20",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-10-21",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-10-22",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-10-23",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-10-24",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-10-25",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-10-26",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-10-27",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-10-28",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-10-29",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-10-30",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-10-31",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-11-01",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-11-02",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-11-03",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-11-04",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-11-05",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-11-06",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-11-07",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-11-08",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-11-09",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-11-10",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-11-11",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-11-12",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-11-13",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-11-14",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-11-15",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-11-16",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-11-17",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-11-18",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-11-19",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-11-20",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-11-21",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-11-22",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-11-23",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-11-24",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-11-25",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-11-26",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-11-27",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-11-28",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-11-29",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-11-30",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-12-01",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-12-02",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-12-03",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-12-04",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-12-05",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-12-06",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-12-07",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-12-08",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-12-09",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-12-10",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-12-11",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-12-12",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-12-13",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-12-14",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-12-15",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-12-16",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-12-17",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-12-18",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-12-19",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-12-20",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-12-21",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-12-22",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-12-23",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-12-24",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-12-25",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-12-26",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-12-27",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-12-28",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-12-29",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-12-30",
+        "amount": -9.5
+      },
+      {
+        "date": "2026-12-31",
+        "amount": -9.5
+      }
+    ],
+    "owner": "Tomi"
+  },
+  {
+    "merchant": "PLAYSTATION-PLUS",
+    "category": "Subscriptions",
+    "frequency": "Monthly",
+    "cycle_days": 30,
+    "count": 10,
+    "first_date": "2026-01-08",
+    "last_date": "2026-06-08",
+    "avg_amount": -8.95,
+    "variance": 0.0,
+    "projected_payments": [
+      {
+        "date": "2026-07-08",
+        "amount": -8.95
+      },
+      {
+        "date": "2026-08-07",
+        "amount": -8.95
+      },
+      {
+        "date": "2026-09-06",
+        "amount": -8.95
+      },
+      {
+        "date": "2026-10-06",
+        "amount": -8.95
+      },
+      {
+        "date": "2026-11-05",
+        "amount": -8.95
+      },
+      {
+        "date": "2026-12-05",
+        "amount": -8.95
+      }
+    ],
+    "owner": "Tomi"
+  },
+  {
+    "merchant": "LIME & FLAMINGO",
+    "category": "Transportation",
+    "frequency": "Daily",
+    "cycle_days": 1,
+    "count": 87,
+    "first_date": "2026-01-04",
+    "last_date": "2026-05-19",
+    "avg_amount": -2.45,
+    "variance": 0.45,
+    "projected_payments": [
+      {
+        "date": "2026-05-20",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-05-21",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-05-22",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-05-23",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-05-24",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-05-25",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-05-26",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-05-27",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-05-28",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-05-29",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-05-30",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-05-31",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-06-01",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-06-02",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-06-03",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-06-04",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-06-05",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-06-06",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-06-07",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-06-08",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-06-09",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-06-10",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-06-11",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-06-12",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-06-13",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-06-14",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-06-15",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-06-16",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-06-17",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-06-18",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-06-19",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-06-20",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-06-21",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-06-22",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-06-23",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-06-24",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-06-25",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-06-26",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-06-27",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-06-28",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-06-29",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-06-30",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-07-01",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-07-02",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-07-03",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-07-04",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-07-05",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-07-06",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-07-07",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-07-08",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-07-09",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-07-10",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-07-11",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-07-12",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-07-13",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-07-14",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-07-15",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-07-16",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-07-17",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-07-18",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-07-19",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-07-20",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-07-21",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-07-22",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-07-23",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-07-24",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-07-25",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-07-26",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-07-27",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-07-28",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-07-29",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-07-30",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-07-31",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-08-01",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-08-02",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-08-03",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-08-04",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-08-05",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-08-06",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-08-07",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-08-08",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-08-09",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-08-10",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-08-11",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-08-12",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-08-13",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-08-14",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-08-15",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-08-16",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-08-17",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-08-18",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-08-19",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-08-20",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-08-21",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-08-22",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-08-23",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-08-24",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-08-25",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-08-26",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-08-27",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-08-28",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-08-29",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-08-30",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-08-31",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-09-01",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-09-02",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-09-03",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-09-04",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-09-05",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-09-06",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-09-07",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-09-08",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-09-09",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-09-10",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-09-11",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-09-12",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-09-13",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-09-14",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-09-15",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-09-16",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-09-17",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-09-18",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-09-19",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-09-20",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-09-21",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-09-22",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-09-23",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-09-24",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-09-25",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-09-26",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-09-27",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-09-28",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-09-29",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-09-30",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-10-01",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-10-02",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-10-03",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-10-04",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-10-05",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-10-06",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-10-07",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-10-08",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-10-09",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-10-10",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-10-11",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-10-12",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-10-13",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-10-14",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-10-15",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-10-16",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-10-17",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-10-18",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-10-19",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-10-20",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-10-21",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-10-22",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-10-23",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-10-24",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-10-25",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-10-26",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-10-27",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-10-28",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-10-29",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-10-30",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-10-31",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-11-01",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-11-02",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-11-03",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-11-04",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-11-05",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-11-06",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-11-07",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-11-08",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-11-09",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-11-10",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-11-11",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-11-12",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-11-13",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-11-14",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-11-15",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-11-16",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-11-17",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-11-18",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-11-19",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-11-20",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-11-21",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-11-22",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-11-23",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-11-24",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-11-25",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-11-26",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-11-27",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-11-28",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-11-29",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-11-30",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-12-01",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-12-02",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-12-03",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-12-04",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-12-05",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-12-06",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-12-07",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-12-08",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-12-09",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-12-10",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-12-11",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-12-12",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-12-13",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-12-14",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-12-15",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-12-16",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-12-17",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-12-18",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-12-19",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-12-20",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-12-21",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-12-22",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-12-23",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-12-24",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-12-25",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-12-26",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-12-27",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-12-28",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-12-29",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-12-30",
+        "amount": -2.45
+      },
+      {
+        "date": "2026-12-31",
+        "amount": -2.45
+      }
+    ],
+    "owner": "Tomi"
+  },
+  {
+    "merchant": "*E-Bike Insurance",
+    "category": "Insurance and Loans",
+    "frequency": "Monthly",
+    "cycle_days": 30,
+    "count": 1,
+    "first_date": "2026-06-16",
+    "last_date": "2026-06-16",
+    "avg_amount": 223,
+    "variance": 0,
+    "projected_payments": [
+      {
+        "date": "2026-07-16",
+        "amount": 223
+      },
+      {
+        "date": "2026-08-15",
+        "amount": 223
+      },
+      {
+        "date": "2026-09-14",
+        "amount": 223
+      },
+      {
+        "date": "2026-10-14",
+        "amount": 223
+      },
+      {
+        "date": "2026-11-13",
+        "amount": 223
+      },
+      {
+        "date": "2026-12-13",
+        "amount": 223
+      }
+    ],
+    "owner": "Tomi"
+  },
+  {
+    "merchant": "*Honda Loan (Avanti)",
+    "category": "Insurance and Loans",
+    "frequency": "Monthly",
+    "cycle_days": 30,
+    "count": 1,
+    "first_date": "2026-06-02",
+    "last_date": "2026-06-02",
+    "avg_amount": 275,
+    "variance": 0,
+    "projected_payments": [
+      {
+        "date": "2026-07-02",
+        "amount": 275
+      },
+      {
+        "date": "2026-08-01",
+        "amount": 275
+      },
+      {
+        "date": "2026-08-31",
+        "amount": 275
+      },
+      {
+        "date": "2026-09-30",
+        "amount": 275
+      },
+      {
+        "date": "2026-10-30",
+        "amount": 275
+      },
+      {
+        "date": "2026-11-29",
+        "amount": 275
+      },
+      {
+        "date": "2026-12-29",
+        "amount": 275
+      }
+    ],
+    "owner": "Tomi"
+  },
+  {
+    "merchant": "*Outlander Loan (Heartland)",
+    "category": "Insurance and Loans",
+    "frequency": "Monthly",
+    "cycle_days": 30,
+    "count": 1,
+    "first_date": "2026-06-29",
+    "last_date": "2026-06-29",
+    "avg_amount": 1094,
+    "variance": 0,
+    "projected_payments": [
+      {
+        "date": "2026-07-29",
+        "amount": 1094
+      },
+      {
+        "date": "2026-08-28",
+        "amount": 1094
+      },
+      {
+        "date": "2026-09-27",
+        "amount": 1094
+      },
+      {
+        "date": "2026-10-27",
+        "amount": 1094
+      },
+      {
+        "date": "2026-11-26",
+        "amount": 1094
+      },
+      {
+        "date": "2026-12-26",
+        "amount": 1094
+      }
+    ],
+    "owner": "Tola"
+  },
+  {
+    "merchant": "*IRD",
+    "category": "Insurance and Loans",
+    "frequency": "Monthly",
+    "cycle_days": 30,
+    "count": 1,
+    "first_date": "2026-06-30",
+    "last_date": "2026-06-30",
+    "avg_amount": 2138,
+    "variance": 0,
+    "projected_payments": [
+      {
+        "date": "2026-07-30",
+        "amount": 2138
+      },
+      {
+        "date": "2026-08-29",
+        "amount": 2138
+      },
+      {
+        "date": "2026-09-28",
+        "amount": 2138
+      },
+      {
+        "date": "2026-10-28",
+        "amount": 2138
+      },
+      {
+        "date": "2026-11-27",
+        "amount": 2138
+      },
+      {
+        "date": "2026-12-27",
+        "amount": 2138
+      }
+    ],
+    "owner": "Tola"
+  },
+  {
+    "merchant": "*ACC",
+    "category": "Insurance and Loans",
+    "frequency": "Monthly",
+    "cycle_days": 30,
+    "count": 1,
+    "first_date": "2026-07-11",
+    "last_date": "2026-07-11",
+    "avg_amount": 335,
+    "variance": 0,
+    "projected_payments": [
+      {
+        "date": "2026-08-10",
+        "amount": 335
+      },
+      {
+        "date": "2026-09-09",
+        "amount": 335
+      },
+      {
+        "date": "2026-10-09",
+        "amount": 335
+      },
+      {
+        "date": "2026-11-08",
+        "amount": 335
+      },
+      {
+        "date": "2026-12-08",
+        "amount": 335
+      }
+    ],
+    "owner": "Tola"
+  },
+  {
+    "merchant": "ETHAN FOOTBALL FIX",
+    "category": "Children & Education",
+    "frequency": "Termly",
+    "cycle_days": 85,
+    "count": 1,
+    "first_date": "2026-04-20",
+    "last_date": "2026-04-20",
+    "avg_amount": 125,
+    "variance": 0,
+    "projected_payments": [
+      {
+        "date": "2026-07-14",
+        "amount": 125
+      },
+      {
+        "date": "2026-10-07",
+        "amount": 125
+      },
+      {
+        "date": "2026-12-31",
+        "amount": 125
+      }
+    ],
+    "owner": "Tola"
+  },
+  {
+    "merchant": "MARIE ANNE - ART SCHOOL",
+    "category": "Children & Education",
+    "frequency": "Termly",
+    "cycle_days": 85,
+    "count": 1,
+    "first_date": "2026-04-20",
+    "last_date": "2026-04-20",
+    "avg_amount": 262,
+    "variance": 0,
+    "projected_payments": [
+      {
+        "date": "2026-07-14",
+        "amount": 262
+      },
+      {
+        "date": "2026-10-07",
+        "amount": 262
+      },
+      {
+        "date": "2026-12-31",
+        "amount": 262
+      }
+    ],
+    "owner": "Tola"
+  },
+  {
+    "merchant": "SCHOOL FEES",
+    "category": "Children & Education",
+    "frequency": "Weekly",
+    "cycle_days": 7,
+    "count": 1,
+    "first_date": "2026-01-30",
+    "last_date": "2026-01-30",
+    "avg_amount": 262,
+    "variance": 0,
+    "projected_payments": [
+      {
+        "date": "2026-02-06",
+        "amount": 262
+      },
+      {
+        "date": "2026-02-13",
+        "amount": 262
+      },
+      {
+        "date": "2026-02-20",
+        "amount": 262
+      },
+      {
+        "date": "2026-02-27",
+        "amount": 262
+      },
+      {
+        "date": "2026-03-06",
+        "amount": 262
+      },
+      {
+        "date": "2026-03-13",
+        "amount": 262
+      },
+      {
+        "date": "2026-03-20",
+        "amount": 262
+      },
+      {
+        "date": "2026-03-27",
+        "amount": 262
+      },
+      {
+        "date": "2026-04-03",
+        "amount": 262
+      },
+      {
+        "date": "2026-04-10",
+        "amount": 262
+      },
+      {
+        "date": "2026-04-17",
+        "amount": 262
+      },
+      {
+        "date": "2026-04-24",
+        "amount": 262
+      },
+      {
+        "date": "2026-05-01",
+        "amount": 262
+      },
+      {
+        "date": "2026-05-08",
+        "amount": 262
+      },
+      {
+        "date": "2026-05-15",
+        "amount": 262
+      },
+      {
+        "date": "2026-05-22",
+        "amount": 262
+      },
+      {
+        "date": "2026-05-29",
+        "amount": 262
+      },
+      {
+        "date": "2026-06-05",
+        "amount": 262
+      },
+      {
+        "date": "2026-06-12",
+        "amount": 262
+      },
+      {
+        "date": "2026-06-19",
+        "amount": 262
+      },
+      {
+        "date": "2026-06-26",
+        "amount": 262
+      },
+      {
+        "date": "2026-07-03",
+        "amount": 262
+      },
+      {
+        "date": "2026-07-10",
+        "amount": 262
+      },
+      {
+        "date": "2026-07-17",
+        "amount": 262
+      },
+      {
+        "date": "2026-07-24",
+        "amount": 262
+      },
+      {
+        "date": "2026-07-31",
+        "amount": 262
+      },
+      {
+        "date": "2026-08-07",
+        "amount": 262
+      },
+      {
+        "date": "2026-08-14",
+        "amount": 262
+      },
+      {
+        "date": "2026-08-21",
+        "amount": 262
+      },
+      {
+        "date": "2026-08-28",
+        "amount": 262
+      },
+      {
+        "date": "2026-09-04",
+        "amount": 262
+      },
+      {
+        "date": "2026-09-11",
+        "amount": 262
+      },
+      {
+        "date": "2026-09-18",
+        "amount": 262
+      },
+      {
+        "date": "2026-09-25",
+        "amount": 262
+      },
+      {
+        "date": "2026-10-02",
+        "amount": 262
+      },
+      {
+        "date": "2026-10-09",
+        "amount": 262
+      },
+      {
+        "date": "2026-10-16",
+        "amount": 262
+      },
+      {
+        "date": "2026-10-23",
+        "amount": 262
+      },
+      {
+        "date": "2026-10-30",
+        "amount": 262
+      },
+      {
+        "date": "2026-11-06",
+        "amount": 262
+      },
+      {
+        "date": "2026-11-13",
+        "amount": 262
+      },
+      {
+        "date": "2026-11-20",
+        "amount": 262
+      },
+      {
+        "date": "2026-11-27",
+        "amount": 262
+      },
+      {
+        "date": "2026-12-04",
+        "amount": 262
+      },
+      {
+        "date": "2026-12-11",
+        "amount": 262
+      },
+      {
+        "date": "2026-12-18",
+        "amount": 262
+      },
+      {
+        "date": "2026-12-25",
+        "amount": 262
+      }
+    ],
+    "owner": "Tola"
+  },
+  {
+    "merchant": "Afterpay",
+    "category": "Insurance and Loans",
+    "frequency": "Fortnightly",
+    "cycle_days": 14,
+    "count": 1,
+    "first_date": "2026-07-01",
+    "last_date": "2026-07-01",
+    "avg_amount": 223,
+    "variance": 0,
+    "projected_payments": [
+      {
+        "date": "2026-07-15",
+        "amount": 223
+      },
+      {
+        "date": "2026-07-29",
+        "amount": 223
+      },
+      {
+        "date": "2026-08-12",
+        "amount": 223
+      },
+      {
+        "date": "2026-08-26",
+        "amount": 223
+      },
+      {
+        "date": "2026-09-09",
+        "amount": 223
+      },
+      {
+        "date": "2026-09-23",
+        "amount": 223
+      },
+      {
+        "date": "2026-10-07",
+        "amount": 223
+      },
+      {
+        "date": "2026-10-21",
+        "amount": 223
+      },
+      {
+        "date": "2026-11-04",
+        "amount": 223
+      },
+      {
+        "date": "2026-11-18",
+        "amount": 223
+      },
+      {
+        "date": "2026-12-02",
+        "amount": 223
+      },
+      {
+        "date": "2026-12-16",
+        "amount": 223
+      },
+      {
+        "date": "2026-12-30",
+        "amount": 223
+      }
+    ],
+    "owner": ""
+  },
+  {
+    "merchant": "1 PASS",
+    "category": "Subscriptions",
+    "frequency": "Monthly",
+    "cycle_days": 30,
+    "count": 1,
+    "first_date": "2026-06-30",
+    "last_date": "2026-06-30",
+    "avg_amount": 8,
+    "variance": 0,
+    "projected_payments": [
+      {
+        "date": "2026-07-30",
+        "amount": 8
+      },
+      {
+        "date": "2026-08-29",
+        "amount": 8
+      },
+      {
+        "date": "2026-09-28",
+        "amount": 8
+      },
+      {
+        "date": "2026-10-28",
+        "amount": 8
+      },
+      {
+        "date": "2026-11-27",
+        "amount": 8
+      },
+      {
+        "date": "2026-12-27",
+        "amount": 8
+      }
+    ],
+    "owner": "Tomi"
+  }
+]
