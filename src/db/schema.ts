@@ -3,7 +3,7 @@ import type { Bill, PaySchedule } from './types'
 
 const db = new Dexie('PaymentReminderDB') as Dexie & {
   bills: EntityTable<Bill, 'id'>
-  paySchedules: EntityTable<PaySchedule, 'id'>
+  paySchedules: EntityTable<PaySchedule, 'owner'>
 }
 
 db.version(1).stores({
@@ -13,6 +13,11 @@ db.version(1).stores({
 db.version(2).stores({
   bills: '++id, merchant, owner',
   paySchedules: '++id, &owner',
+})
+
+db.version(3).stores({
+  bills: '++id, merchant, owner',
+  paySchedules: '&owner',
 })
 
 const SEED_BILLS: Bill[] = [
@@ -56,11 +61,15 @@ let seeding = false
 
 export async function seedDatabase(): Promise<void> {
   if (seeding) return
-  const count = await db.bills.count()
-  if (count > 0) return
   seeding = true
-  await db.bills.bulkAdd(SEED_BILLS)
-  await db.paySchedules.bulkAdd(DEFAULT_SCHEDULES)
+  const billCount = await db.bills.count()
+  if (billCount === 0) {
+    await db.bills.bulkAdd(SEED_BILLS)
+  }
+  const scheduleCount = await db.paySchedules.count()
+  if (scheduleCount === 0) {
+    await db.paySchedules.bulkAdd(DEFAULT_SCHEDULES)
+  }
   seeding = false
 }
 

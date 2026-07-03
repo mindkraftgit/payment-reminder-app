@@ -11,21 +11,22 @@ interface PaydayEditorProps {
 }
 
 export default function PaydayEditor({ onClose }: PaydayEditorProps) {
-  const schedules = useLiveQuery(() => db.paySchedules.toArray()) ?? []
+  const schedules = useLiveQuery(() => db.paySchedules.toArray())
   const [saving, setSaving] = useState(false)
   const [scheduleStates, setScheduleStates] = useState<Record<string, PaySchedule>>({})
+  const [isInitialized, setIsInitialized] = useState(false)
 
-  // Initialize schedule states
+  // Initialize schedule states once when schedules load from DB
   useEffect(() => {
-    if (Object.keys(scheduleStates).length > 0) return
-    
-    const owners = ['Tola', 'Tomi'] as const;
+    if (schedules === undefined) return
+    if (isInitialized) return
+
+    const owners = ['Tola', 'Tomi'] as const
     const initialStates: Record<string, PaySchedule> = {}
-    
+
     owners.forEach((owner) => {
       const existing = schedules.find((s) => s.owner === owner)
       if (existing) {
-        // Ensure all required fields are present for TwiceMonthly
         if (existing.frequency === 'TwiceMonthly') {
           initialStates[owner] = {
             ...existing,
@@ -46,8 +47,10 @@ export default function PaydayEditor({ onClose }: PaydayEditorProps) {
         }
       }
     })
+
     setScheduleStates(initialStates)
-  }, [schedules, scheduleStates])
+    setIsInitialized(true)
+  }, [schedules, isInitialized])
 
   function formatDefaultAnchor(owner: string): string {
     return owner === 'Tola' ? '2026-07-07' : '2026-07-15'
@@ -55,30 +58,45 @@ export default function PaydayEditor({ onClose }: PaydayEditorProps) {
 
   // Update a schedule state
   const updateScheduleState = (owner: string, updates: Partial<PaySchedule>) => {
-    setScheduleStates(prev => ({
-      ...prev,
-      [owner]: {
-        ...prev[owner],
-        ...updates
+    setScheduleStates(prev => {
+      const filtered = Object.fromEntries(
+        Object.entries(updates).filter(([, v]) => v !== undefined)
+      ) as Partial<PaySchedule>
+      return {
+        ...prev,
+        [owner]: {
+          ...prev[owner],
+          ...filtered
+        }
       }
-    }))
+    })
   }
 
   // Save all schedules
   const handleSaveAll = async () => {
     if (saving) return
-    
+
     setSaving(true)
-    
+
     try {
-      // Save both schedules
-      await Promise.all(
-        Object.values(scheduleStates).map(schedule => 
-          db.paySchedules.put(schedule)
-        )
-      )
-      
-      // Close the editor after successful save
+      const cleanedSchedules = Object.values(scheduleStates).map(schedule => {
+        if (schedule.frequency === 'Fortnightly') {
+          return {
+            owner: schedule.owner,
+            frequency: 'Fortnightly' as const,
+            dayOfWeek: schedule.dayOfWeek ?? 2,
+            firstPayDate: schedule.firstPayDate ?? '',
+          }
+        }
+        return {
+          owner: schedule.owner,
+          frequency: 'TwiceMonthly' as const,
+          firstDay: schedule.firstDay ?? 15,
+          secondDay: schedule.secondDay ?? -1,
+        }
+      })
+
+      await db.paySchedules.bulkPut(cleanedSchedules)
       onClose()
     } catch (error) {
       console.error('Failed to save schedules:', error)
@@ -138,6 +156,15 @@ function ScheduleForm({ schedule, onUpdate }: ScheduleFormProps) {
   const [firstPayDate, setFirstPayDate] = useState(schedule.firstPayDate ?? '')
   const [firstDay, setFirstDay] = useState(schedule.firstDay ?? 15)
   const [secondDay, setSecondDay] = useState(schedule.secondDay === -1 ? '' : String(schedule.secondDay))
+
+  // Sync local state when schedule prop changes (e.g. after DB load or save)
+  useEffect(() => {
+    setFrequency(schedule.frequency)
+    setDayOfWeek(schedule.dayOfWeek ?? 2)
+    setFirstPayDate(schedule.firstPayDate ?? '')
+    setFirstDay(schedule.firstDay ?? 15)
+    setSecondDay(schedule.secondDay === -1 ? '' : String(schedule.secondDay))
+  }, [schedule.frequency, schedule.dayOfWeek, schedule.firstPayDate, schedule.firstDay, schedule.secondDay])
 
   // Update parent component when state changes
   const updateParent = () => {
@@ -239,15 +266,28 @@ function ScheduleForm({ schedule, onUpdate }: ScheduleFormProps) {
             className="w-full bg-surface-2 text-on-surface rounded-lg px-3 py-2.5 text-sm border border-surface-2 focus:outline-none focus:border-accent mb-3"
           />
 
-          <label className="block text-xs text-muted mb-1">Second payday (day of month)</label>
-          <input
-            type="number"
-            min={1}
-            max={28}
-            value={secondDay}
-            onChange={(e) => handleSecondDayChange(e.target.value)}
-            className="w-full bg-surface-2 text-on-surface rounded-lg px-3 py-2.5 text-sm border border-surface-2 focus:outline-none focus:border-accent mb-3"
-          />
+          <label className="block text-xs text-muted mb-1">Second payday</label>
+          <div className="flex gap-2 mb-3">
+            <input
+              type="number"
+              min={1}
+              max={28}
+              value={secondDay}
+              onChange={(e) => handleSecondDayChange(e.target.value)}
+              className="flex-1 bg-surface-2 text-on-surface rounded-lg px-3 py-2.5 text-sm border border-surface-2 focus:outline-none focus:border-accent"
+              placeholder="Day of month"
+            />
+            <button
+              onClick={() => handleSecondDayChange('')}
+              className={`py-2 px-3 rounded-lg text-sm font-medium transition-colors min-h-[44px] ${
+                secondDay === ''
+                  ? 'bg-accent text-white'
+                  : 'bg-surface-2 text-muted hover:text-on-surface'
+              }`}
+            >
+              Last day
+            </button>
+          </div>
         </>
       )}
     </div>

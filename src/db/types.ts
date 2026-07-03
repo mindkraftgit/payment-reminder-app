@@ -20,7 +20,6 @@ export interface Bill {
 }
 
 export interface PaySchedule {
-  id?: number
   owner: string
   frequency: 'Fortnightly' | 'TwiceMonthly'
   dayOfWeek?: number
