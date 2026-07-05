@@ -66,23 +66,20 @@ export default function PaymentCard({ bill, paymentDate, amount, onClick, schedu
           ${amount.toFixed(2)}
         </span>
       </div>
-      <div className="flex items-center gap-1.5 mt-1.5 text-xs text-muted flex-wrap">
-        <span className="font-medium text-on-surface/80">{formattedDate}</span>
-        <span className="text-muted/30">|</span>
-        <span className="flex items-center gap-1">
-          <FrequencyIcon freq={bill.frequency} />
-          {bill.frequency}
-        </span>
-        <span className="text-muted/30">|</span>
-        <span>{bill.category}</span>
-        <span className="text-muted/30">|</span>
-        <span className="flex items-center gap-1">
-          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-            <circle cx="12" cy="7" r="4" />
-          </svg>
-          {bill.owner}
-        </span>
+        <div className="flex flex-col gap-1 mt-1.5 text-xs">
+          <div className="flex items-center gap-1.5 text-muted">
+            <span className="font-medium text-on-surface/80">{formattedDate}</span>
+            <span className="text-muted/30">|</span>
+            <span className="flex items-center gap-1">
+              <FrequencyIcon freq={bill.frequency} />
+              {bill.frequency}
+            </span>
+          </div>
+          <div className="flex items-center gap-1.5 text-muted">
+            <span>{bill.category}</span>
+            <span className="text-muted/30">|</span>
+            <span>{bill.owner}</span>
+          </div>
       </div>
     </button>
   )

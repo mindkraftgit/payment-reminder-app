@@ -9,7 +9,7 @@ interface LayoutProps {
 
 export default function Layout({ children, onSettings, onAddBill, filterSlot }: LayoutProps) {
   return (
-    <div className="w-full max-w-sm md:max-w-5xl mx-auto flex flex-col min-h-dvh pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]">
+    <div className="w-full mx-auto flex flex-col min-h-dvh pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)] md:max-w-5xl">
       <header className="sticky top-0 z-10 flex items-center gap-2 px-4 h-14 bg-surface-1 backdrop-blur-sm border-b border-surface-2">
         <div className="flex-1 overflow-x-auto">
           {filterSlot}

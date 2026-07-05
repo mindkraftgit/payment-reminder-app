@@ -80,8 +80,8 @@ export default function BillEditor({ bill, onClose }: BillEditorProps) {
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/60">
-      <div className="w-full max-w-md bg-surface-1 rounded-t-2xl sm:rounded-2xl p-6 max-h-[90dvh] overflow-y-auto">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
+      <div className="mx-auto w-full max-w-[calc(100vw-4rem)] bg-surface-1 rounded-3xl p-6 sm:p-8 my-5 sm:my-8 max-h-[90dvh] overflow-y-auto">
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-base font-bold text-on-surface">Edit Bill</h2>
           <button
