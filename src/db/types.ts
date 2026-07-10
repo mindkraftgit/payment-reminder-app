@@ -17,6 +17,10 @@ export interface Bill {
   projected_payments: ProjectedPayment[]
   owner: string
   displayName?: string
+  sheetRow?: number
+  exact_date?: number
+  iconUrl?: string
+  iconDataUri?: string
 }
 
 export interface PaySchedule {

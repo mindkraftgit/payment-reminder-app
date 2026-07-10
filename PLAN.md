@@ -1,113 +1,119 @@
-# Payment Reminder App - Implementation Plan
+# Plan: Custom Bill Icons via Google Drive Upload
 
-## Overview
-Mobile/desktop web app that lists upcoming payments from JSON data using real-world calendar dates. Users can select date ranges, filter by owner, edit bill start dates/count to extrapolate future payments, and view total cost for a period. PWA-compatible (iPhone caching), hosted via GitHub Pages.
+## Context
 
-## Tech Stack
-- **Framework:** React 19 + Vite 6 + TypeScript 5.7
-- **Storage:** Dexie.js (IndexedDB) – local-first state container
-- **PWA:** vite-plugin-pwa (Workbox, cache-first)
-- **Package Manager:** pnpm
-- **Date Handling:** date-fns
-- **Styling:** Tailwind CSS v4 (dark theme, single accent color)
-- **Deploy:** gh-pages + GitHub Actions
+Users can assign a custom image to each bill. Previously, uploaded images were stored as base64 data URIs in IndexedDB — local-only and lost on "Refresh from Sheets". This tranche adds Google Drive upload so images persist across devices and survive data refreshes.
 
-## Architecture Decisions (from AGENT.md)
-- Cache-first for static assets; stale-while-revalidate for JSON datasets
-- On boot, seed IndexedDB from `public/data/recurring_bills.json` if empty
-- All writes/updates/deletes target IndexedDB exclusively
-- No ephemeral global state for critical data; persist to IndexedDB
-- Single file ≤150 lines; keep DB schema/view modules cleanly split
+## Architecture
 
-## File Structure
 ```
-PaymentReminderApp/
-├── public/
-│   └── data/
-│       └── recurring_bills.json
-├── src/
-│   ├── db/
-│   │   ├── types.ts           # TypeScript interfaces
-│   │   └── schema.ts          # Dexie DB definition + seed logic
-│   ├── hooks/
-│   │   ├── useBills.ts        # Live query wrapper
-│   │   ├── useDateRange.ts    # Range picker state
-│   │   └── useExtrapolate.ts  # Future date calculation
-│   ├── components/
-│   │   ├── Layout.tsx         # Responsive shell (sidebar/bottom nav)
-│   │   ├── PaymentList.tsx    # Filtered, grouped payment list
-│   │   ├── PaymentCard.tsx    # Single bill row/card
-│   │   ├── DateRangePicker.tsx
-│   │   ├── BillEditor.tsx     # Edit modal for merchant/firstDate/count
-│   │   ├── OwnerFilter.tsx
-│   │   └── TotalBar.tsx       # Shows total cost for period
-│   ├── App.tsx
-│   ├── main.tsx
-│   └── index.css              # Tailwind + custom dark theme vars
-├── index.html
-├── vite.config.ts
-├── tsconfig.json
-├── tsconfig.app.json
-├── tsconfig.node.json
-├── package.json
-├── postcss.config.js
-├── tailwind.config.ts
-├── PLAN.md
-└── .github/workflows/deploy.yml
+User picks file → FileReader → blob
+  → uploadImageToDrive() → Drive API multipart upload
+  → set permissions (anyone with link)
+  → get file ID
+  → construct URL: https://drive.google.com/uc?id={fileId}
+  → save URL to bill.iconUrl (IndexedDB) + icon_url column L (Sheets)
+  → CategoryIcon renders <img src={url} />
 ```
 
-## Component Tree & Data Flow
-```
-App
- └─ Layout (responsive: sidebar | bottom nav)
-     ├─ OwnerFilter        → sets selectedOwner
-     ├─ DateRangePicker    → sets startDate / endDate
-     ├─ TotalBar           → reads filtered payments, shows sum
-     └─ PaymentList        → live query from Dexie, filtered by range + owner
-         └─ PaymentCard[]  → tap opens BillEditor
-              └─ BillEditor  → saves back to Dexie via db.bills.put()
-```
+## Folder ID Configuration
 
-## Extrapolation Logic
-```
-Input:  firstDate, cycleDays, count, avgAmount, variance
-Output: projected_payments[]
+The Google Drive folder ID is stored in `.env.google-sheets.json` and bundled into the app at build time:
 
-Algorithm:
-  let d = new Date(firstDate)
-  for i = 0 to count-1:
-    push { date: format(d, 'yyyy-MM-dd'), amount: avgAmount ± variance }
-    d = addDays(d, cycleDays)
-  Store last_date = final date
-```
-
-## PWA Configuration
-- `registerType: 'autoUpdate'`
-- `workbox.globPatterns: ['**/*.{js,css,html,json,png,svg,ico}']`
-- `workbox.runtimeCaching` for `/data/` → `StaleWhileRevalidate`
-- Manifest: `display: 'standalone'`, `background_color: '#121212'`, theme color: `#06D6A0`
-
-## Dark Theme Colors (Tailwind)
-```ts
-colors: {
-  surface: { DEFAULT: '#121212', 1: '#1e1e1e', 2: '#2a2a2a' },
-  accent: '#06D6A0',
-  onSurface: '#e0e0e0',
-  muted: '#6b7280',
+```json
+{
+  "spreadsheetId": "...",
+  "sheetName": "Data",
+  "credentialsPath": "./client-secret.json",
+  "driveFolderId": "YOUR_FOLDER_ID_HERE"
 }
 ```
 
-## UI Rules (from AGENT.md)
-- Touch targets: `min-h-[44px] min-w-[44px]`
-- Layout: `w-full max-w-sm md:max-w-5xl mx-auto`
-- Mobile: bottom navigation; Desktop: sidebar grid
-- Safe area: `pt-[env(safe-area-inset-top)]` and `pb-[env(safe-area-inset-bottom)]`
+**To get your folder ID:**
+1. Open Google Drive → navigate to your folder
+2. Copy the URL: `https://drive.google.com/drive/folders/1ABCxyz...`
+3. Paste the full URL or just the ID part into `driveFolderId`
+4. Rebuild the app (`npm run build`)
 
-## GitHub Pages Deployment
-- Vite `base: '/PaymentReminderApp/'`
-- Script: `"deploy": "pnpm build && gh-pages -d dist"`
-- CI: `.github/workflows/deploy.yml` on push to main
+This persists across devices — no settings UI needed, it's committed to git.
 
-## Build Verification
-- `pnpm build` must generate both `sw.js` and complete `workbox-*.js` asset index
-- Components handle empty states gracefully
+## Changes
+
+### 1. OAuth Scope (`src/utils/googleSheets.ts`)
+- `https://www.googleapis.com/auth/drive.file` added to scope
+- Users will see a new consent prompt on next auth (Drive file access)
+
+### 2. Upload Function (`src/utils/googleSheets.ts`)
+```typescript
+export async function uploadImageToDrive(
+  file: File,
+  merchant: string,
+  owner: string,
+): Promise<string | null>
+```
+- Multipart upload to Drive API
+- Creates `PaymentReminderIcons/` folder lazily (or uses configured folder)
+- File named `{merchant}_{owner}_{timestamp}.{ext}`
+- Returns `https://drive.google.com/uc?id={fileId}` on success
+
+### 3. Permission Function (`src/utils/googleSheets.ts`)
+```typescript
+async function setFilePublic(fileId: string): Promise<void>
+```
+- Sets file to "anyone with link can view"
+- Ensures images load without auth
+
+### 4. BillEditor & NewBillModal
+- Image picker: URL input + file picker
+- File picker calls `uploadImageToDrive()` → URL → `iconUrl`
+- Authenticated → Drive upload; Unauthenticated → base64 fallback
+- Shows "Uploading..." progress
+
+### 5. CategoryIcon (`src/components/CategoryIcon.tsx`)
+- 60x60 fully circular (`rounded-full`)
+- `iconUrl` prop: renders `<img>` with Phosphor duotone fallback
+- 60x60 fully circular with object-cover
+
+### 6. Google Sheets Schema
+- Column K: `exact_date` (day of month, 1-28, for exact-date mode)
+- Column L: `icon_url` (Drive URL or pasted URL)
+- `billToRow()` / `mapRowToBill()` handle both columns
+
+## Data Flow
+
+| Action | IndexedDB | Google Sheets | Google Drive |
+|--------|-----------|---------------|--------------|
+| Paste URL | `iconUrl` = URL | `icon_url` = URL | — |
+| Upload file | `iconUrl` = URL | `icon_url` = URL | Image stored |
+| Refresh from Sheets | Cleared + re-fetched from L | Source of truth | Images persist |
+| Delete bill | Cleared | Row deleted | Image orphaned |
+
+## Google Cloud Console
+
+- [x] Google Drive API enabled
+- [x] `drive.file` scope added to OAuth client
+- [x] `spreadsheets` scope for Sheets access
+
+## Files Modified
+
+| File | Change |
+|------|--------|
+| `.env.google-sheets.json` | Added `driveFolderId` field |
+| `src/utils/googleSheets.ts` | Drive scope, upload, permissions, folder config |
+| `src/components/BillEditor.tsx` | Upload progress, wire to upload |
+| `src/components/NewBillModal.tsx` | Upload progress, wire to upload |
+| `src/components/CategoryIcon.tsx` | Phosphor duotone, `iconUrl` prop, 60x60 circle |
+| `src/components/OwnerFilter.tsx` | Modal overlay with circular accent icon |
+| `src/components/PaymentCard.tsx` | Subtext: Line 1=date, Line 2="Freq | Cat | Owner" |
+| `src/utils.ts` | `getValidatedPayments` handles `cycle_days=-1` (exact date) |
+| `src/db/types.ts` | `exact_date?: number`, `iconUrl?: string` fields |
+| `tsconfig.app.json` | `resolveJsonModule: true` |
+
+## Verification
+
+- [ ] Upload a file in BillEditor → preview shows → save → check Drive folder has image
+- [ ] Check spreadsheet column L has the Drive URL
+- [ ] Refresh from Sheets → bill still shows custom icon
+- [ ] Paste a URL instead of uploading → still works
+- [ ] Remove icon → icon cleared from IndexedDB and Sheets
+- [ ] Build passes (`npm run build`)

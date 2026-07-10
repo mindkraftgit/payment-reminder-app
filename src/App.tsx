@@ -11,9 +11,12 @@ import NewBillModal from './components/NewBillModal'
 import PaydayEditor from './components/PaydayEditor'
 import { useBills } from './hooks/useBills'
 import { useDateRange } from './hooks/useDateRange'
-import { seedDatabase } from './db/schema'
+import { seedDatabase, refreshFromSheets } from './db/schema'
 import db from './db/schema'
 import type { Bill } from './db/types'
+import { isAuthenticated, authenticate } from './utils/googleSheets'
+import { prettyName } from './utils'
+import { endOfYear, parseISO } from 'date-fns'
 
 const ACCENT_COLORS = ['#06D6A0', '#3B82F6', '#8B5CF6', '#F97316']
 
@@ -26,6 +29,17 @@ export default function App() {
   const [hideDaily, setHideDaily] = useState(true)
   const [showNewBill, setShowNewBill] = useState(false)
   const [dateFilterApplied, setDateFilterApplied] = useState(false)
+  const [refreshing, setRefreshing] = useState(false)
+  const [authStatus, setAuthStatus] = useState<'checking' | 'authenticated' | 'unauthenticated'>('checking')
+  const [searchQuery, setSearchQuery] = useState('')
+  const [showOwnerFilter, setShowOwnerFilter] = useState(false)
+  const [searchEndDate, setSearchEndDate] = useState(() => {
+    const saved = localStorage.getItem('searchEndDate')
+    if (saved) {
+      try { return parseISO(saved) } catch { /* fallthrough */ }
+    }
+    return endOfYear(new Date())
+  })
   const [showRedZone, setShowRedZone] = useState(() => {
     return localStorage.getItem('showRedZone') !== 'false'
   })
@@ -52,6 +66,14 @@ export default function App() {
   }, [seeded])
 
   useEffect(() => {
+    async function checkAuth() {
+      const authenticated = isAuthenticated()
+      setAuthStatus(authenticated ? 'authenticated' : 'unauthenticated')
+    }
+    checkAuth()
+  }, [])
+
+  useEffect(() => {
     document.documentElement.style.setProperty('--color-accent', accentColor)
     localStorage.setItem('accentColor', accentColor)
   }, [accentColor])
@@ -69,6 +91,10 @@ export default function App() {
     localStorage.setItem('adjustWeekends', String(adjustWeekends))
   }, [adjustWeekends])
 
+  useEffect(() => {
+    localStorage.setItem('searchEndDate', searchEndDate.toISOString())
+  }, [searchEndDate])
+
   const owners = useMemo(() => {
     const set = new Set(bills.map((b) => b.owner))
     return Array.from(set).sort()
@@ -82,17 +108,84 @@ export default function App() {
     if (hideDaily) {
       list = list.filter((b) => b.frequency !== 'Daily')
     }
+    if (searchQuery.trim()) {
+      const q = searchQuery.toLowerCase()
+      list = list.filter(
+        (b) =>
+          b.merchant.toLowerCase().includes(q) ||
+          prettyName(b.merchant).toLowerCase().includes(q) ||
+          b.category.toLowerCase().includes(q),
+      )
+    }
     return list
-  }, [bills, selectedOwner, hideDaily])
+  }, [bills, selectedOwner, hideDaily, searchQuery])
+
+  const isSearching = searchQuery.trim().length > 0
+  const effectiveEndDate = isSearching ? searchEndDate : endDate
+
+  async function handleRefresh() {
+    setRefreshing(true)
+    try {
+      await refreshFromSheets()
+      window.location.reload()
+    } catch (error) {
+      console.error('Failed to refresh:', error)
+    }
+    setRefreshing(false)
+  }
+
+  async function handleAuthenticate() {
+    const success = await authenticate()
+    setAuthStatus(success ? 'authenticated' : 'unauthenticated')
+  }
 
   return (
     <Layout
       onSettings={() => setShowSettings(true)}
       onAddBill={() => setShowNewBill(true)}
+      onRefresh={handleRefresh}
+      refreshing={refreshing}
       filterSlot={
-        <OwnerFilter owners={owners} selected={selectedOwner} onChange={setSelectedOwner} />
+        <button
+          onClick={() => setShowOwnerFilter(true)}
+          className="h-10 w-10 flex items-center justify-center rounded-full bg-accent text-surface transition-colors shrink-0"
+          aria-label="Filter by owner"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            {selectedOwner === 'All' ? (
+              <>
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </>
+            ) : (
+              <>
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </>
+            )}
+          </svg>
+        </button>
       }
     >
+      <OwnerFilter
+        owners={owners}
+        selected={selectedOwner}
+        onChange={setSelectedOwner}
+        open={showOwnerFilter}
+        onClose={() => setShowOwnerFilter(false)}
+      />
+      <div className="mb-4">
+        <input
+          type="text"
+          placeholder="Search by name or category..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          className="w-full bg-surface-1 border border-surface-2 rounded-lg px-3 py-2.5 text-sm min-h-[44px] focus:outline-none focus:ring-2 focus:ring-accent/50"
+        />
+      </div>
+
       <button
         onClick={() => setShowDateFilter(true)}
         className="w-full bg-surface-1 border border-surface-2 rounded-lg py-2.5 mb-4 text-sm text-muted font-medium min-h-[44px] hover:bg-surface-2 transition-colors flex items-center justify-center gap-1.5"
@@ -115,7 +208,7 @@ export default function App() {
         <TotalBar
           bills={filtered}
           startDate={startDate}
-          endDate={endDate}
+          endDate={effectiveEndDate}
           onClose={() => setDateFilterApplied(false)}
           adjustWeekends={adjustWeekends}
         />
@@ -124,9 +217,9 @@ export default function App() {
       <PaymentList
         bills={filtered}
         startDate={startDate}
-        endDate={endDate}
+        endDate={effectiveEndDate}
         onEditBill={setEditingBill}
-        hidePast={!dateFilterApplied}
+        hidePast={!dateFilterApplied && !isSearching}
         adjustWeekends={adjustWeekends}
         schedules={schedules}
         showRedZone={showRedZone}
@@ -161,6 +254,12 @@ export default function App() {
             setShowSettings(false)
             setShowPaydayEditor(true)
           }}
+          onRefreshBills={handleRefresh}
+          isRefreshing={refreshing}
+          authStatus={authStatus}
+          onAuthenticate={handleAuthenticate}
+          searchEndDate={searchEndDate}
+          onSearchEndDateChange={setSearchEndDate}
           onClose={() => setShowSettings(false)}
         />
       )}

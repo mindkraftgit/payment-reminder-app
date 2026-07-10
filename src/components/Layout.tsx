@@ -5,15 +5,40 @@ interface LayoutProps {
   onSettings: () => void
   onAddBill: () => void
   filterSlot?: ReactNode
+  onRefresh?: () => void
+  refreshing?: boolean
 }
 
-export default function Layout({ children, onSettings, onAddBill, filterSlot }: LayoutProps) {
+export default function Layout({ children, onSettings, onAddBill, filterSlot, onRefresh, refreshing }: LayoutProps) {
   return (
     <div className="w-full mx-auto flex flex-col min-h-dvh pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)] md:max-w-5xl">
       <header className="sticky top-0 z-10 flex items-center gap-2 px-4 h-14 bg-surface-1 backdrop-blur-sm border-b border-surface-2">
         <div className="flex-1 overflow-x-auto">
           {filterSlot}
         </div>
+        {onRefresh && (
+          <button
+            onClick={onRefresh}
+            disabled={refreshing}
+            className="text-muted hover:text-on-surface h-10 w-10 flex items-center justify-center transition-colors rounded-full border border-surface-2 shrink-0 disabled:opacity-50"
+            aria-label="Refresh from Google Sheets"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className={refreshing ? 'animate-spin' : ''}
+            >
+              <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.9a10 10 0 0 1 18.8-4.3M22 12.1a10 10 0 0 1-18.8 4.3" />
+            </svg>
+          </button>
+        )}
         <button
           onClick={onAddBill}
           className="text-muted hover:text-on-surface h-10 w-10 flex items-center justify-center transition-colors rounded-full border border-surface-2 shrink-0"

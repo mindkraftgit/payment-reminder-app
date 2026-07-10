@@ -69,17 +69,32 @@ export function getValidatedPayments(
   cycleDays: number,
   avgAmount: number,
   adjustWeekends?: boolean,
+  exactDate?: number,
 ): ProjectedPayment[] {
   const payments: ProjectedPayment[] = []
-  const start = new Date(firstDate)
   const amount = Math.abs(avgAmount)
   const horizon = new Date()
   horizon.setFullYear(horizon.getFullYear() + 5)
 
-  let d = new Date(start)
-  while (d <= horizon) {
-    payments.push({ date: format(d, 'yyyy-MM-dd'), amount })
-    d = addDays(d, cycleDays)
+  if (cycleDays === -1 && exactDate) {
+    const day = Math.min(Math.max(1, exactDate), 28)
+    const startParts = firstDate.split('-').map(Number)
+    const startLocal = new Date(startParts[0], startParts[1] - 1, startParts[2])
+    let current = new Date(startParts[0], startParts[1] - 1, day)
+    if (current < startLocal) {
+      current = new Date(current.getFullYear(), current.getMonth() + 1, day)
+    }
+    while (current <= horizon) {
+      payments.push({ date: format(current, 'yyyy-MM-dd'), amount })
+      current = new Date(current.getFullYear(), current.getMonth() + 1, day)
+    }
+  } else {
+    const start = new Date(firstDate)
+    let d = new Date(start)
+    while (d <= horizon) {
+      payments.push({ date: format(d, 'yyyy-MM-dd'), amount })
+      d = addDays(d, cycleDays)
+    }
   }
 
   if (adjustWeekends) {
@@ -192,7 +207,7 @@ export function getNextPayday(fromDate: string, schedule: PaySchedule): string |
   return null
 }
 
-function getLastPayday(fromDate: string, schedule: PaySchedule): string | null {
+export function getLastPayday(fromDate: string, schedule: PaySchedule): string | null {
   const from = parseISO(fromDate)
   if (schedule.frequency === 'Fortnightly') {
     if (schedule.dayOfWeek === undefined || !schedule.firstPayDate) return null

@@ -42,6 +42,7 @@ export default function PaymentList({ bills, startDate, endDate, onEditBill, hid
         bill.cycle_days,
         bill.avg_amount,
         adjustWeekends,
+        bill.exact_date,
       )
       for (const p of payments) {
         const key = `${bill.merchant}|${bill.owner}|${p.date}`

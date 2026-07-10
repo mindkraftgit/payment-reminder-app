@@ -1,3 +1,5 @@
+import { format } from 'date-fns'
+
 const ACCENT_COLORS = [
   { name: 'Teal', value: '#06D6A0' },
   { name: 'Blue', value: '#3B82F6' },
@@ -17,10 +19,16 @@ interface SettingsProps {
   showRedZone: boolean
   onToggleRedZone: () => void
   onOpenPaydayEditor: () => void
+  onRefreshBills: () => void
+  isRefreshing: boolean
+  authStatus: 'checking' | 'authenticated' | 'unauthenticated'
+  onAuthenticate: () => void
+  searchEndDate: Date
+  onSearchEndDateChange: (date: Date) => void
   onClose: () => void
 }
 
-export default function Settings({ hideDaily, onToggleDaily, accentColor, onAccentColorChange, isDark, onToggleDark, adjustWeekends, onToggleWeekends, showRedZone, onToggleRedZone, onOpenPaydayEditor, onClose }: SettingsProps) {
+export default function Settings({ hideDaily, onToggleDaily, accentColor, onAccentColorChange, isDark, onToggleDark, adjustWeekends, onToggleWeekends, showRedZone, onToggleRedZone, onOpenPaydayEditor, onRefreshBills, isRefreshing, authStatus, onAuthenticate, searchEndDate, onSearchEndDateChange, onClose }: SettingsProps) {
   return (
       <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
         <div className="mx-auto w-full max-w-[calc(100vw-4rem)] bg-surface-1 rounded-3xl p-6 sm:p-8 my-5 sm:my-8">
@@ -94,6 +102,20 @@ export default function Settings({ hideDaily, onToggleDaily, accentColor, onAcce
           </button>
         </label>
 
+        <div className="py-3">
+          <span className="text-sm text-on-surface">Search end date</span>
+          <p className="text-xs text-muted mt-1">When searching, show payments up to this date</p>
+          <input
+            type="date"
+            value={format(searchEndDate, 'yyyy-MM-dd')}
+            onChange={(e) => {
+              const d = new Date(e.target.value + 'T00:00:00')
+              if (!isNaN(d.getTime())) onSearchEndDateChange(d)
+            }}
+            className="w-full mt-2 bg-surface-0 border border-surface-2 rounded-lg px-3 py-2.5 text-sm min-h-[44px] focus:outline-none focus:ring-2 focus:ring-accent/50"
+          />
+        </div>
+
         <button
           onClick={onOpenPaydayEditor}
           className="w-full py-2.5 rounded-lg text-sm font-medium bg-surface-2 text-on-surface hover:bg-accent hover:text-white transition-colors mt-3 min-h-[44px] flex items-center justify-center gap-2"
@@ -106,6 +128,57 @@ export default function Settings({ hideDaily, onToggleDaily, accentColor, onAcce
           </svg>
           Payday Schedule
         </button>
+
+        <div className="py-3 space-y-2">
+          <div className="flex items-center justify-between">
+            <span className="text-sm text-on-surface">Google Sheets Sync</span>
+            {authStatus === 'authenticated' ? (
+              <span className="flex items-center gap-1 text-xs text-green-400">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+                Connected
+              </span>
+            ) : authStatus === 'checking' ? (
+              <span className="text-xs text-muted">Checking...</span>
+            ) : (
+              <span className="flex items-center gap-1 text-xs text-orange-400">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="12" y1="8" x2="12" y2="12" />
+                  <line x1="12" y1="16" x2="12.01" y2="16" />
+                </svg>
+                Not connected
+              </span>
+            )}
+          </div>
+
+          {authStatus === 'unauthenticated' && (
+            <button
+              onClick={onAuthenticate}
+              className="w-full py-2.5 rounded-lg text-sm font-medium bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500/20 transition-colors min-h-[44px] flex items-center justify-center gap-2"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+              Authenticate with Google Sheets
+            </button>
+          )}
+
+          <button
+            onClick={onRefreshBills}
+            disabled={isRefreshing}
+            className="w-full py-2.5 rounded-lg text-sm font-medium bg-accent text-white hover:opacity-90 transition-colors min-h-[44px] flex items-center justify-center gap-2 disabled:opacity-50"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <polyline points="23 4 23 10 17 10" />
+              <polyline points="1 20 1 14 7 14" />
+              <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15" />
+            </svg>
+            {isRefreshing ? 'Refreshing...' : 'Refresh from Google Sheets'}
+          </button>
+        </div>
       </div>
     </div>
   )

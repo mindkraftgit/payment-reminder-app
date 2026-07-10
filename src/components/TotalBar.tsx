@@ -24,6 +24,7 @@ export default function TotalBar({ bills, startDate, endDate, onClose, adjustWee
         bill.cycle_days,
         bill.avg_amount,
         adjustWeekends,
+        bill.exact_date,
       )
       for (const p of payments) {
         if (isInRange(p.date, startDate, endDate)) {

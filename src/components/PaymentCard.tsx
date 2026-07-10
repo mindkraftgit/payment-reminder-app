@@ -1,6 +1,7 @@
 import { format, parseISO, isSameDay } from 'date-fns'
 import type { Bill, PaySchedule } from '../db/types'
 import { prettyName, isInRedZone } from '../utils'
+import CategoryIcon from './CategoryIcon'
 
 interface PaymentCardProps {
   bill: Bill
@@ -58,28 +59,33 @@ export default function PaymentCard({ bill, paymentDate, amount, onClick, schedu
             : 'bg-surface-1 border-surface-2 hover:bg-surface-2'
       }`}
     >
-      <div className="flex items-start justify-between gap-2">
-        <h3 className="text-base font-semibold text-on-surface truncate flex-1 min-w-0">
-          {bill.displayName || prettyName(bill.merchant)}
-        </h3>
-        <span className="text-base font-bold text-accent whitespace-nowrap">
-          ${amount.toFixed(2)}
-        </span>
-      </div>
-        <div className="flex flex-col gap-1 mt-1.5 text-xs">
-          <div className="flex items-center gap-1.5 text-muted">
-            <span className="font-medium text-on-surface/80">{formattedDate}</span>
-            <span className="text-muted/30">|</span>
-            <span className="flex items-center gap-1">
-              <FrequencyIcon freq={bill.frequency} />
-              {bill.frequency}
+      <div className="flex items-start gap-3">
+        <CategoryIcon category={bill.category} iconUrl={bill.iconUrl} iconDataUri={bill.iconDataUri} />
+        <div className="flex-1 min-w-0">
+          <div className="flex items-start justify-between gap-2">
+            <h3 className="text-base font-semibold text-on-surface truncate flex-1 min-w-0">
+              {bill.displayName || prettyName(bill.merchant)}
+            </h3>
+            <span className="text-base font-bold text-accent whitespace-nowrap">
+              ${amount.toFixed(2)}
             </span>
           </div>
-          <div className="flex items-center gap-1.5 text-muted">
-            <span>{bill.category}</span>
-            <span className="text-muted/30">|</span>
-            <span>{bill.owner}</span>
+          <div className="flex flex-col gap-1 mt-1 text-xs">
+            <div className="flex items-center gap-1.5 text-muted">
+              <span className="font-medium text-on-surface/80">{formattedDate}</span>
+            </div>
+            <div className="flex items-center gap-1.5 text-muted">
+              <span className="flex items-center gap-1">
+                <FrequencyIcon freq={bill.frequency} />
+                {bill.frequency}
+              </span>
+              <span className="text-muted/30">|</span>
+              <span>{bill.category}</span>
+              <span className="text-muted/30">|</span>
+              <span>{bill.owner}</span>
+            </div>
           </div>
+        </div>
       </div>
     </button>
   )

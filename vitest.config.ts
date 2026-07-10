@@ -1,8 +1,9 @@
-/** @type {import('vitest').UserConfig} */
-export default {
+import { defineConfig } from 'vitest/config'
+
+export default defineConfig({
   test: {
     globals: true,
-    environment: 'jsdom',
+    environment: 'node',
     setupFiles: ['./__tests__/setup.ts'],
     include: ['**/__tests__/**/*.test.ts'],
     exclude: ['**/node_modules/**'],
@@ -14,4 +15,4 @@ export default {
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
   },
-}
+})
