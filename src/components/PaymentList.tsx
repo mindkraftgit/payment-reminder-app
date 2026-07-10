@@ -13,6 +13,7 @@ interface PaymentListProps {
   adjustWeekends?: boolean
   schedules?: PaySchedule[]
   showRedZone?: boolean
+  roundPayments?: boolean
 }
 
 interface FlatPayment {
@@ -27,7 +28,7 @@ function isInRange(dateStr: string, start: Date, end: Date): boolean {
 
 const WEEKS_PER_PAGE = 2
 
-export default function PaymentList({ bills, startDate, endDate, onEditBill, hidePast, adjustWeekends, schedules, showRedZone }: PaymentListProps) {
+export default function PaymentList({ bills, startDate, endDate, onEditBill, hidePast, adjustWeekends, schedules, showRedZone, roundPayments }: PaymentListProps) {
   const [visibleWeeks, setVisibleWeeks] = useState(WEEKS_PER_PAGE)
 
   const weeks = useMemo(() => {
@@ -111,6 +112,7 @@ export default function PaymentList({ bills, startDate, endDate, onEditBill, hid
                 onClick={() => onEditBill(item.bill)}
                 schedules={schedules}
                 showRedZone={showRedZone}
+                roundPayments={roundPayments}
               />
             ))}
           </div>

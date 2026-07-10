@@ -8,6 +8,7 @@ interface TotalBarProps {
   endDate: Date
   onClose: () => void
   adjustWeekends?: boolean
+  roundPayments?: boolean
 }
 
 function isInRange(dateStr: string, start: Date, end: Date): boolean {
@@ -15,7 +16,7 @@ function isInRange(dateStr: string, start: Date, end: Date): boolean {
   return d >= start && d <= end
 }
 
-export default function TotalBar({ bills, startDate, endDate, onClose, adjustWeekends }: TotalBarProps) {
+export default function TotalBar({ bills, startDate, endDate, onClose, adjustWeekends, roundPayments }: TotalBarProps) {
   const total = useMemo(() => {
     let sum = 0
     for (const bill of bills) {
@@ -45,7 +46,7 @@ export default function TotalBar({ bills, startDate, endDate, onClose, adjustWee
         Total for period
       </span>
       <div className="flex items-center gap-3">
-        <span className="text-lg font-bold text-accent">${total.toFixed(2)}</span>
+          <span className="text-lg font-bold text-accent">${roundPayments ? Math.ceil(total) : total.toFixed(2)}</span>
         <button
           onClick={onClose}
           className="text-muted hover:text-on-surface min-h-[44px] min-w-[44px] flex items-center justify-center"

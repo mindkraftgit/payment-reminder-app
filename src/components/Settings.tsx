@@ -19,6 +19,8 @@ interface SettingsProps {
   onToggleWeekends: () => void
   showRedZone: boolean
   onToggleRedZone: () => void
+  roundPayments: boolean
+  onToggleRoundPayments: () => void
   onOpenPaydayEditor: () => void
   onRefreshBills: () => void
   isRefreshing: boolean
@@ -29,7 +31,7 @@ interface SettingsProps {
   onClose: () => void
 }
 
-export default function Settings({ hideDaily, onToggleDaily, accentColor, onAccentColorChange, isDark, onToggleDark, adjustWeekends, onToggleWeekends, showRedZone, onToggleRedZone, onOpenPaydayEditor, onRefreshBills, isRefreshing, authStatus, onAuthenticate, searchEndDate, onSearchEndDateChange, onClose }: SettingsProps) {
+export default function Settings({ hideDaily, onToggleDaily, accentColor, onAccentColorChange, isDark, onToggleDark, adjustWeekends, onToggleWeekends, showRedZone, onToggleRedZone, roundPayments, onToggleRoundPayments, onOpenPaydayEditor, onRefreshBills, isRefreshing, authStatus, onAuthenticate, searchEndDate, onSearchEndDateChange, onClose }: SettingsProps) {
   return (
       <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
         <div className="mx-auto w-full max-w-[calc(100vw-4rem)] bg-surface-1 rounded-3xl p-6 sm:p-8 my-5 sm:my-8">
@@ -100,6 +102,16 @@ export default function Settings({ hideDaily, onToggleDaily, accentColor, onAcce
             className={`relative w-12 h-6 rounded-full transition-colors ${showRedZone ? 'bg-accent' : 'bg-surface-2'}`}
           >
             <span className={`absolute top-0.5 left-0.5 w-5 h-5 rounded-full bg-white transition-transform ${showRedZone ? 'translate-x-6' : ''}`} />
+          </button>
+        </label>
+
+        <label className="flex items-center justify-between py-3">
+          <span className="text-sm text-on-surface">Round payments up</span>
+          <button
+            onClick={onToggleRoundPayments}
+            className={`relative w-12 h-6 rounded-full transition-colors ${roundPayments ? 'bg-accent' : 'bg-surface-2'}`}
+          >
+            <span className={`absolute top-0.5 left-0.5 w-5 h-5 rounded-full bg-white transition-transform ${roundPayments ? 'translate-x-6' : ''}`} />
           </button>
         </label>
 

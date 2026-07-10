@@ -10,9 +10,10 @@ interface PaymentCardProps {
   onClick: () => void
   schedules?: PaySchedule[]
   showRedZone?: boolean
+  roundPayments?: boolean
 }
 
-export default function PaymentCard({ bill, paymentDate, amount, onClick, schedules, showRedZone }: PaymentCardProps) {
+export default function PaymentCard({ bill, paymentDate, amount, onClick, schedules, showRedZone, roundPayments }: PaymentCardProps) {
   const dayName = format(parseISO(paymentDate), 'EEE')
   const formattedDate = `${dayName} ${format(parseISO(paymentDate), 'do MMMM yyyy')}`
   const isDueToday = isSameDay(parseISO(paymentDate), new Date())
@@ -38,7 +39,7 @@ export default function PaymentCard({ bill, paymentDate, amount, onClick, schedu
             </h3>
             <span className="text-accent whitespace-nowrap leading-none">
               <span className="text-sm align-top relative top-0.5">$</span>
-              <span className="text-3xl font-light">{amount % 1 === 0 ? amount.toFixed(0) : amount.toFixed(2)}</span>
+              <span className="text-3xl font-light">{roundPayments ? Math.ceil(amount) : amount.toFixed(2)}</span>
             </span>
           </div>
           <div className="flex flex-col gap-0.5 text-xs">

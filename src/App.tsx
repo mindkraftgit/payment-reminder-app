@@ -54,6 +54,9 @@ export default function App() {
     const saved = localStorage.getItem('accentColor')
     return saved && ACCENT_COLORS.includes(saved) ? saved : '#06D6A0'
   })
+  const [roundPayments, setRoundPayments] = useState(() => {
+    return localStorage.getItem('roundPayments') !== 'false'
+  })
   const bills = useBills()
   const [showPaydayEditor, setShowPaydayEditor] = useState(false)
   const schedules = useLiveQuery(() => db.paySchedules.toArray()) ?? []
@@ -77,6 +80,10 @@ export default function App() {
     document.documentElement.style.setProperty('--color-accent', accentColor)
     localStorage.setItem('accentColor', accentColor)
   }, [accentColor])
+
+  useEffect(() => {
+    localStorage.setItem('roundPayments', String(roundPayments))
+  }, [roundPayments])
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light')
@@ -211,6 +218,7 @@ export default function App() {
           endDate={effectiveEndDate}
           onClose={() => setDateFilterApplied(false)}
           adjustWeekends={adjustWeekends}
+          roundPayments={roundPayments}
         />
       )}
 
@@ -223,6 +231,7 @@ export default function App() {
         adjustWeekends={adjustWeekends}
         schedules={schedules}
         showRedZone={showRedZone}
+        roundPayments={roundPayments}
       />
 
       {showDateFilter && (
@@ -260,6 +269,8 @@ export default function App() {
           onAuthenticate={handleAuthenticate}
           searchEndDate={searchEndDate}
           onSearchEndDateChange={setSearchEndDate}
+          roundPayments={roundPayments}
+          onToggleRoundPayments={() => setRoundPayments((v) => !v)}
           onClose={() => setShowSettings(false)}
         />
       )}
