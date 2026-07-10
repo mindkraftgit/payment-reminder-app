@@ -5,6 +5,7 @@ const ACCENT_COLORS = [
   { name: 'Blue', value: '#3B82F6' },
   { name: 'Purple', value: '#8B5CF6' },
   { name: 'Orange', value: '#F97316' },
+  { name: 'Red', value: '#EF4444' },
 ]
 
 interface SettingsProps {

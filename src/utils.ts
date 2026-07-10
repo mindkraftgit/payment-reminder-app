@@ -8,7 +8,7 @@ const INITIALISMS = new Set([
 
 const OWNER_NAMES = ['TOLA', 'TOMI']
 
-function stripOwnerSuffix(raw: string): string {
+export function stripOwnerSuffix(raw: string): string {
   const upper = raw.toUpperCase()
   for (const owner of OWNER_NAMES) {
     if (upper.endsWith(`-${owner}`)) {
@@ -18,7 +18,7 @@ function stripOwnerSuffix(raw: string): string {
   return raw
 }
 
-function formatAppleEntry(name: string): string {
+export function formatAppleEntry(name: string): string {
   const applePrefix = /^Apple\s+/i
   if (!applePrefix.test(name)) return name
   const rest = name.replace(applePrefix, '')

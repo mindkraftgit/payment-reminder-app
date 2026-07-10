@@ -66,8 +66,9 @@ export default function PaymentCard({ bill, paymentDate, amount, onClick, schedu
             <h3 className="text-base font-semibold text-on-surface truncate flex-1 min-w-0">
               {bill.displayName || prettyName(bill.merchant)}
             </h3>
-            <span className="text-base font-bold text-accent whitespace-nowrap">
-              ${amount.toFixed(2)}
+            <span className="text-accent whitespace-nowrap leading-none">
+              <span className="text-sm align-top relative top-0.5">$</span>
+              <span className="text-3xl font-light">{amount % 1 === 0 ? amount.toFixed(0) : amount.toFixed(2)}</span>
             </span>
           </div>
           <div className="flex flex-col gap-1 mt-1 text-xs">

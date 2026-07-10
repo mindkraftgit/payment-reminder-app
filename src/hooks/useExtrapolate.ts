@@ -2,12 +2,12 @@ import { useMemo } from 'react'
 import { addDays, format } from 'date-fns'
 import type { Bill, ProjectedPayment } from '../db/types'
 
-function extrapolatePayments(
+export function extrapolatePayments(
   firstDate: string,
   cycleDays: number,
   count: number,
   avgAmount: number,
-): ProjectedPayment[] {
+): { projected_payments: ProjectedPayment[]; last_date: string } {
   const payments: ProjectedPayment[] = []
   let d = new Date(firstDate)
 
@@ -16,7 +16,12 @@ function extrapolatePayments(
     d = addDays(d, cycleDays)
   }
 
-  return payments
+  const last_date =
+    payments.length > 0
+      ? payments[payments.length - 1].date
+      : firstDate
+
+  return { projected_payments: payments, last_date }
 }
 
 export function useExtrapolate(bills: Bill[], projectUntil: string): Bill[] {
@@ -25,16 +30,12 @@ export function useExtrapolate(bills: Bill[], projectUntil: string): Bill[] {
       const cycleDays = bill.cycle_days || 30
       const count = bill.count || 0
       const avgAmount = bill.avg_amount || 0
-      const projected_payments = extrapolatePayments(
+      const { projected_payments, last_date } = extrapolatePayments(
         bill.first_date,
         cycleDays,
         count,
         avgAmount,
       )
-      const last_date =
-        projected_payments.length > 0
-          ? projected_payments[projected_payments.length - 1].date
-          : bill.last_date
       return { ...bill, projected_payments, last_date }
     })
   }, [bills, projectUntil])

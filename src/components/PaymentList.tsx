@@ -92,7 +92,7 @@ export default function PaymentList({ bills, startDate, endDate, onEditBill, hid
     <div className="space-y-6">
       {visible.map(({ weekStart, items }) => (
         <div key={weekStart.getTime()}>
-          <h3 className="text-xs font-bold text-muted uppercase tracking-wider mb-3 px-1 flex items-center gap-1.5">
+            <h3 className="text-xs font-bold text-accent uppercase tracking-wider mb-3 px-1 flex items-center gap-1.5">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
               <line x1="16" y1="2" x2="16" y2="6" />

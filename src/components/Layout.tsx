@@ -20,7 +20,7 @@ export default function Layout({ children, onSettings, onAddBill, filterSlot, on
           <button
             onClick={onRefresh}
             disabled={refreshing}
-            className="text-muted hover:text-on-surface h-10 w-10 flex items-center justify-center transition-colors rounded-full border border-surface-2 shrink-0 disabled:opacity-50"
+            className="text-accent h-10 w-10 flex items-center justify-center transition-colors rounded-full border border-accent shrink-0 disabled:opacity-50"
             aria-label="Refresh from Google Sheets"
           >
             <svg
@@ -41,7 +41,7 @@ export default function Layout({ children, onSettings, onAddBill, filterSlot, on
         )}
         <button
           onClick={onAddBill}
-          className="text-muted hover:text-on-surface h-10 w-10 flex items-center justify-center transition-colors rounded-full border border-surface-2 shrink-0"
+          className="text-accent h-10 w-10 flex items-center justify-center transition-colors rounded-full border border-accent shrink-0"
           aria-label="Add bill"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -51,7 +51,7 @@ export default function Layout({ children, onSettings, onAddBill, filterSlot, on
         </button>
         <button
           onClick={onSettings}
-          className="text-muted hover:text-on-surface h-10 w-10 flex items-center justify-center transition-colors rounded-full border border-surface-2 shrink-0"
+          className="text-accent h-10 w-10 flex items-center justify-center transition-colors rounded-full border border-accent shrink-0"
           aria-label="Settings"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
