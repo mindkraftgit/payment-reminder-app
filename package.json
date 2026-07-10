@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://toladev.github.io/PaymentReminderApp",
+  "homepage": "https://mindkraftgit.github.io/payment-reminder-app",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

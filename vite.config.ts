@@ -5,7 +5,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 import mkcert from 'vite-plugin-mkcert'
 
 export default defineConfig({
-  base: '/PaymentReminderApp/',
+  base: '/payment-reminder-app/',
   server: {
     host: '0.0.0.0',
   },
@@ -25,7 +25,7 @@ export default defineConfig({
         display: 'standalone',
         icons: [
           {
-            src: '/PaymentReminderApp/favicon.svg',
+            src: '/payment-reminder-app/favicon.svg',
             sizes: 'any',
             type: 'image/svg+xml',
           },
